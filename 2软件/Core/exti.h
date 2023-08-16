@@ -41,11 +41,18 @@ extern "C" {
 
 #define EXTI_PreemptionPriority_Default 2
 #define EXTI_SubPriority_Default 1
-
+//
+#define HALL_EXTI_PreemptionPriority_Default 3
+#define HALL_EXTI_SubPriority_Default 1
+//
 typedef void(*EXTI_CallbackFunction_t)(void);
 
 void EXTIx_Init(uint8_t Pin, EXTI_CallbackFunction_t function, EXTITrigger_Type Trigger_Mode, uint8_t PreemptionPriority, uint8_t SubPriority);
 void attachInterrupt(uint8_t Pin, EXTI_CallbackFunction_t function, EXTITrigger_Type Trigger_Mode);
+
+//
+void HALL_attachInterrupt(uint8_t Pin, EXTI_CallbackFunction_t function, EXTITrigger_Type Trigger_Mode);
+//
 void detachInterrupt(uint8_t Pin);
 
 #ifdef __cplusplus

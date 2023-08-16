@@ -106,7 +106,7 @@
 
 /*Hall switch */
 #define CONFIG_HALL_SWITCH_PIN 			PB9
-#define CONFIG_HALL_SWITCH_TIM			TIM3
+#define CONFIG_HALL_SWITCH_TIM			TIM5
 
 
 /*LED0   */
