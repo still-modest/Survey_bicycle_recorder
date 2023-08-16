@@ -109,6 +109,7 @@ void Buzz_Tone(uint32_t freq, int32_t duration = -1);
 void Encoder_Init();
 void Encoder_Update();
 int32_t Encoder_GetDiff();
+int32_t Encoder_GetIsBack();
 bool Encoder_GetIsPush();
 void Encoder_SetEnable(bool en);
 
