@@ -10,10 +10,10 @@ static void HAL_InterrputUpdate()
     HAL::Encoder_Update();
     HAL::Audio_Update();
 }
-//»ô¶û¿ª¹Ø
+//éœå°”å¼€å…³
 static void HALL_SWITCH_InterrputUpdate()
 {
-	//Ê±¼äÃëÊı¼ÓÒ»
+	//æ—¶é—´ç§’æ•°åŠ ä¸€
 	Hall_second= Hall_second+1;
 	uint8_t temp=digitalRead(CONFIG_LED_PIN);
 	if(temp==1)
@@ -25,7 +25,7 @@ static void HALL_SWITCH_InterrputUpdate()
 		HAL::LED_Close();
 	}
 	
-	//Çå³ıLINE3ÉÏµÄÖĞ¶Ï±êÖ¾Î» 
+	//æ¸…é™¤LINE5ä¸Šçš„ä¸­æ–­æ ‡å¿—ä½
 	TMR_ClearFlag(CONFIG_HALL_SWITCH_TIM, TMR_FLAG_Update);
 }
 
@@ -62,9 +62,9 @@ void HAL::HAL_Init()
     Clock_Init();
     Buzz_init();
     GPS_Init();
-		/*»ô¶û¿ª¹Ø³õÊ¼»¯*/
+	/*éœå°”å¼€å…³åˆå§‹åŒ–*/
 		Hall_switch_Init();
-		/*LED0³õÊ¼»¯*/
+		/*LED0åˆå§‹åŒ–*/
 		LED_Init();
 	
 #if CONFIG_SENSOR_ENABLE
@@ -79,7 +79,7 @@ void HAL::HAL_Init()
 		
     TIM_Cmd(CONFIG_HAL_UPDATE_TIM, ENABLE);
 		
-		//»ô¶û¿ª¹Ø¶¨Ê±Æ÷ÅäÖÃ
+		//éœå°”å¼€å…³å®šæ—¶å™¨é…ç½®
 		HALL_Timer_SetInterrupt(CONFIG_HALL_SWITCH_TIM, 1000 * 1000, HALL_SWITCH_InterrputUpdate);
 		
 		TIM_Cmd(CONFIG_HALL_SWITCH_TIM, ENABLE);

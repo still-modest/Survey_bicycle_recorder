@@ -3,26 +3,26 @@
 #include "timer.h"
 #include "Arduino.h"
 
-double Hall_time=0;		//»ô¶û¿ª¹Ø×ÜÊ±¼ä	µ¥Î»Îªs
-double Short_time=0;	//»ô¶û¿ª¹ØÏ¸Î¢Ê±¼ä	µ¥Î»Îªs
-extern uint32_t Hall_second;		//»ô¶û¿ª¹ØÃëÊı	µ¥Î»Îªs
-double Circle_radius=0.5;				//Ô²°ë¾¶	µ¥Î»Îªm
-double Circle_cfe=0;					//Ô²ÖÜ³¤	µ¥Î»Îªm
-double Circle_speed = 0;			//ËÙ¶È 	µ¥Î»Îªm/s
-//»ô¶û¿ª¹ØÍâ²¿ÖĞ¶Ï·şÎñº¯Êı
+double Hall_time=0;		//éœå°”å¼€å…³æ€»æ—¶é—´		å•ä½ä¸ºs
+double Short_time=0;	//éœå°”å¼€å…³ç»†å¾®æ—¶é—´		å•ä½ä¸ºs
+extern uint32_t Hall_second;		//éœå°”å¼€å…³ç§’æ•°		å•ä½ä¸ºs
+double Circle_radius=0.5;				//åœ†åŠå¾„ å•ä½ä¸ºm
+double Circle_cfe=0;					//åœ†å‘¨é•¿ å•ä½ä¸ºm
+double Circle_speed = 0;			//é€Ÿåº¦ å•ä½ä¸ºm/s
+//éœå°”å¼€å…³å¤–éƒ¨ä¸­æ–­æœåŠ¡å‡½æ•°
 static void Hall_EventHandler()
 {
 	TIM_Cmd(CONFIG_HALL_SWITCH_TIM, DISABLE);
-	//»ñÈ¡Ê±¼ä	
+	//è·å–æ—¶é—´
 		Short_time = TMR_GetCounter(TIM3);
 		Short_time = Short_time*0.0001;
 		Hall_time=  Hall_second+Short_time;
 	
-	//¼ÆËãÖÜ³¤ÒÔ¼°ËÙ¶È
+	//è®¡ç®—å‘¨é•¿ä»¥åŠé€Ÿåº¦
 		Circle_cfe = 2*PI*Circle_radius;
 		Circle_speed = Circle_cfe/Hall_time;
 	
-	//´òÓ¡Ê±¼ä
+	//æ‰“å°æ—¶é—´
 		printf("Short_time: %f s\r\n",Short_time);
 		printf("Hall_time: %f s\r\n",Hall_time);
 		printf("Circle_speed: %f s\r\n",Circle_speed);
@@ -30,10 +30,10 @@ static void Hall_EventHandler()
 		Short_time =0;
 		Hall_second=0;
 		
-		//¿ªÆôÁíÒ»´Î¼ÆÊı
+		//å¼€å¯å¦ä¸€æ¬¡è®¡æ•°
 		TIM_Cmd(CONFIG_HALL_SWITCH_TIM, ENABLE);
 }
-//»ô¶û¿ª¹Ø³õÊ¼»¯
+//éœå°”å¼€å…³åˆå§‹åŒ–
 void HAL::Hall_switch_Init()
 {
 	pinMode(CONFIG_HALL_SWITCH_PIN, INPUT_PULLDOWN);
@@ -42,19 +42,19 @@ void HAL::Hall_switch_Init()
 	
 }
 
-//LED0³õÊ¼»¯
+//LED0åˆå§‹åŒ–
 void HAL::LED_Init()
 {
 	pinMode(CONFIG_LED_PIN,OUTPUT);
 }
 
-//LED0´ò¿ª
+//LED0æ‰“å¼€
 void HAL::LED_Open()
 {
 	digitalWrite(CONFIG_LED_PIN,0);
 }
 
-//LED0¹Ø±Õ
+//LED0å…³é—­
 void HAL::LED_Close()
 {
 	digitalWrite(CONFIG_LED_PIN,1);
