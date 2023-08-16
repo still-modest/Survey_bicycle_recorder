@@ -104,4 +104,8 @@
 /* Show heap Info */
 #define CONFIG_SHOW_HEAP_INFO       0
 
+/*Hall switch */
+#define CONFIG_HALL_SWITCH_PIN 			PB9
+#define CONFIG_HALL_SWITCH_TIM			TIM3
+#define PI													3.14
 #endif
