@@ -75,12 +75,11 @@
 #define CONFIG_ENCODER_B_PIN        PB5
 #define CONFIG_ENCODER_A_PIN        PB4
 #define CONFIG_ENCODER_PUSH_PIN     PB3
-#define CONFIG_ENCODER_D_PIN				PB8
 
 /* Power */
 #define CONFIG_POWER_EN_PIN         PA12
 #define CONFIG_POWER_WAIT_TIME      1000
-#define CONFIG_POWER_SHUTDOWM_DELAY 4000
+#define CONFIG_POWER_SHUTDOWM_DELAY 5000
 
 /* Debug USART */
 #define CONFIG_DEBUG_SERIAL         Serial
@@ -103,13 +102,5 @@
 
 /* Show heap Info */
 #define CONFIG_SHOW_HEAP_INFO       0
-
-/*Hall switch */
-#define CONFIG_HALL_SWITCH_PIN 			PB9
-#define CONFIG_HALL_SWITCH_TIM			TIM5
-
-
-/*LED0   */
-#define CONFIG_LED_PIN							PA15
 
 #endif

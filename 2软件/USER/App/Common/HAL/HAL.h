@@ -109,7 +109,6 @@ void Buzz_Tone(uint32_t freq, int32_t duration = -1);
 void Encoder_Init();
 void Encoder_Update();
 int32_t Encoder_GetDiff();
-int32_t Encoder_GetIsBack();
 bool Encoder_GetIsPush();
 void Encoder_SetEnable(bool en);
 
@@ -121,14 +120,6 @@ bool Audio_PlayMusic(const char* name);
 /* Memory */
 void Memory_DumpInfo();
 
-
-/*Hall_swith*/
-void Hall_switch_Init();
-
-/*LED0  */
-void LED_Init();
-void LED_Open();
-void LED_Close();
 }
 
 #endif

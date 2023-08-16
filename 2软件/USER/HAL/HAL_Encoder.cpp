@@ -7,10 +7,6 @@ static bool EncoderEnable = true;
 static volatile int32_t EncoderDiff = 0;
 static bool EncoderDiffDisable = false;
 
-/*****/
-static volatile int32_t EncoderBack = 0;
-/*****/
-
 static void Buzz_Handler(int dir)
 {
     static const uint16_t freqStart = 2000;
@@ -55,6 +51,9 @@ static void Encoder_EventHandler_A()
 		EncoderDiff += dir;
 		Buzz_Handler(dir);
 		
+//    int dir = (digitalRead(CONFIG_ENCODER_B_PIN) == LOW ? -1 : +1);
+//    EncoderDiff += dir;
+//    Buzz_Handler(dir);
 }
 
 static void Encoder_EventHandler_B()
@@ -72,27 +71,11 @@ static void Encoder_EventHandler_B()
 		EncoderDiff += dir;
 		Buzz_Handler(dir);
 		
+//    int dir = (digitalRead(CONFIG_ENCODER_B_PIN) == LOW ? -1 : +1);
+//    EncoderDiff += dir;
+//    Buzz_Handler(dir);
 }
 
-/*********/
-static void Encoder_EventHandler_D()
-{
-	
-		//关机
-		if(digitalRead(CONFIG_ENCODER_D_PIN) == LOW)
-		{	
-			delay(1000);
-			if(digitalRead(CONFIG_ENCODER_D_PIN) == LOW)
-			{
-				HAL::Audio_PlayMusic("Shutdown");
-				delay(500);
-				HAL::Power_Shutdown();
-			}
-		}
-		
-		
-}
-/*********/
 static void Encoder_PushHandler(ButtonEvent* btn, int event)  //
 {
     if(event == ButtonEvent::EVENT_PRESSED)
@@ -105,8 +88,8 @@ static void Encoder_PushHandler(ButtonEvent* btn, int event)  //
     }
     else if(event == ButtonEvent::EVENT_LONG_PRESSED)
     {
-//        HAL::Audio_PlayMusic("Shutdown");
-//        HAL::Power_Shutdown();
+        HAL::Audio_PlayMusic("Shutdown");
+        HAL::Power_Shutdown();
     }
 }
 
@@ -115,11 +98,9 @@ void HAL::Encoder_Init()
     pinMode(CONFIG_ENCODER_A_PIN, INPUT_PULLUP);
     pinMode(CONFIG_ENCODER_B_PIN, INPUT_PULLUP);
     pinMode(CONFIG_ENCODER_PUSH_PIN, INPUT_PULLUP);
-		pinMode(CONFIG_ENCODER_D_PIN, INPUT_PULLUP);
 
     attachInterrupt(CONFIG_ENCODER_A_PIN, Encoder_EventHandler_A, FALLING);
 		attachInterrupt(CONFIG_ENCODER_B_PIN, Encoder_EventHandler_B, FALLING);
-		attachInterrupt(CONFIG_ENCODER_D_PIN, Encoder_EventHandler_D, FALLING);
 
     EncoderPush.EventAttach(Encoder_PushHandler);
 }
@@ -135,14 +116,7 @@ int32_t HAL::Encoder_GetDiff()
     EncoderDiff = 0;
     return diff;
 }
-/******/
-int32_t HAL::Encoder_GetIsBack()
-{
-		int32_t IsBack = EncoderBack;
-		EncoderBack = 0;
-	  return IsBack;
-}
-/******/
+
 bool HAL::Encoder_GetIsPush()
 {
     if(!EncoderEnable)

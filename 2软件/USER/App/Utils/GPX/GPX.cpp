@@ -30,20 +30,9 @@
  */
 
 #include "GPX.h"
-#include "Config/Config.h"
-//
 
-#define _GPX_INFO_TALL          "</info>\n"
-//
-//
-#define _GPX_TYPE_HEAD          "<type >"
-#define _GPX_TYPE_TALL 					"</type>\n"
-#define _GPX_PAUSE							"pause"
-#define _GPX_CONTINUE						"continue"
-//
 #define _GPX_HEAD "<gpx version=\"1.1\" creator=\"Arduino GPX Lib\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n xmlns=\"http://www.topografix.com/GPX/1/1\"\n xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"\n>\n"
 #define _GPX_TAIL               "</gpx>\n"
-
 #define _GPX_META_HEAD          "<metadata>"
 #define _GPX_META_TAIL          "</metadata>\n"
 #define _GPX_TRAK_HEAD          "<trk>"
@@ -83,38 +72,6 @@ String GPX::getClose()
     return String(_GPX_TAIL);
 }
 
-//
-String GPX::getInfo_Open()
-{
-		return String(_GPX_INFO_HEAD);
-}
-
-String GPX::getInfo_Close()
-{
-		return String(_GPX_INFO_TALL);
-}
-//
-//
-String GPX::getType_Open()
-{
-		return String(_GPX_TYPE_HEAD);
-}
-
-String GPX::getType_Close()
-{
-		return String(_GPX_TYPE_TALL);
-}
-
-String GPX::getPause()
-{
-		return String(_GPX_PAUSE);
-}
-
-String GPX::getContinue()
-{
-		return String(_GPX_CONTINUE);
-}
-//
 String GPX::getMetaData()
 {
     String localStr(_GPX_META_HEAD);

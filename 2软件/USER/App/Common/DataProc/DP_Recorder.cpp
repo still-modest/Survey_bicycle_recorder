@@ -7,6 +7,7 @@
 using namespace DataProc;
 
 #define RECORDER_GPX_TIME_FMT    "%d-%02d-%02dT%02d:%02d:%02dZ"
+#define RECORDER_GPX_FILE_NAME   "/" CONFIG_TRACK_RECORD_FILE_DIR_NAME "/TRK_%d%02d%02d_%02d%02d%02d.gpx"
 #define RECORDER_GPX_META_NAME   VERSION_FIRMWARE_NAME " " VERSION_SOFTWARE
 #define RECORDER_GPX_META_DESC   VERSION_PROJECT_LINK
 
@@ -106,8 +107,6 @@ static void Recorder_RecStart(Recorder_t* recorder, uint16_t time)
         gpx->setDesc("");
 
         Recorder_FileWriteString(file_p, gpx->getOpen().c_str());
-				Recorder_FileWriteString(file_p, gpx->getInfo_Open().c_str());
-				Recorder_FileWriteString(file_p, gpx->getInfo_Close().c_str());
         Recorder_FileWriteString(file_p, gpx->getMetaData().c_str());
         Recorder_FileWriteString(file_p, gpx->getTrakOpen().c_str());
         Recorder_FileWriteString(file_p, gpx->getInfo().c_str());
@@ -119,36 +118,6 @@ static void Recorder_RecStart(Recorder_t* recorder, uint16_t time)
     {
         LV_LOG_ERROR("Track file open error!");
     }
-}
-
-/*添加暂停储存信息*/
-static void Recorder_Pause(Recorder_t* recorder)
-{
-		recorder->active = false;
-		GPX* gpx = &(recorder->gpx);
-		lv_fs_file_t* file_p = &(recorder->file);
-	
-		Recorder_FileWriteString(file_p,gpx->getType_Open().c_str());
-		Recorder_FileWriteString(file_p,gpx->getPause().c_str());
-		Recorder_FileWriteString(file_p,gpx->getType_Close().c_str());
-	
-		LV_LOG_USER("Track record pause");
-	
-}
-
-/*添加继续储存信息*/
-static void Recorder_Continue(Recorder_t* recorder)
-{
-		
-		GPX* gpx = &(recorder->gpx);
-		lv_fs_file_t* file_p = &(recorder->file);
-	
-		Recorder_FileWriteString(file_p,gpx->getType_Open().c_str());
-		Recorder_FileWriteString(file_p,gpx->getContinue().c_str());
-		Recorder_FileWriteString(file_p,gpx->getType_Close().c_str());
-		
-		LV_LOG_USER("Track record continue");
-    recorder->active = true;
 }
 
 static void Recorder_RecStop(Recorder_t* recorder)
@@ -175,10 +144,12 @@ static int onNotify(Recorder_t* recorder, Recorder_Info_t* info)
         Recorder_RecStart(recorder, info->time);
         break;
     case RECORDER_CMD_PAUSE:
-        Recorder_Pause(recorder);
+        recorder->active = false;
+        LV_LOG_USER("Track record pause");
         break;
     case RECORDER_CMD_CONTINUE:
-        Recorder_Continue(recorder);
+        LV_LOG_USER("Track record continue");
+        recorder->active = true;
         break;
     case RECORDER_CMD_STOP:
         Recorder_RecStop(recorder);

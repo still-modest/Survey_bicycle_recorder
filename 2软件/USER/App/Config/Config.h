@@ -27,25 +27,6 @@
    Application configuration
  *=========================*/
 
-//在此处修改姓名，工号
-#define _GPX_INFO_HEAD          "<info 姓名=\"张三\" 工号=\"123456789\" >\n"    
-
-//在此处修改车轮半径
-#define Circle_radius           0.5f				//车轮半径 单位为m
-
-//在此处修改数据文件夹名称
-#define CONFIG_TRACK_RECORD_FILE_DIR_NAME     "data"
-
-
-//在此处修改数据文件夹内单个数据名称
-#define RECORDER_GPX_FILE_NAME   "/" CONFIG_TRACK_RECORD_FILE_DIR_NAME "/data_%d%02d%02d_%02d%02d%02d.txt"
-
-/*=========================
-   Application configuration
- *=========================*/
-
-//下列数据不建议修改
-
 #define CONFIG_SYSTEM_SAVE_FILE_PATH          "/SystemSave.json"
 #define CONFIG_SYSTEM_LANGUAGE_DEFAULT        "en-GB"
 #define CONFIG_SYSTEM_TIME_ZONE_DEFAULT       8    // GMT+ 8
@@ -63,6 +44,7 @@
 #define CONFIG_GPS_LATITUDE_DEFAULT           39.907415f
 
 #define CONFIG_TRACK_FILTER_OFFSET_THRESHOLD  2 // pixel
+#define CONFIG_TRACK_RECORD_FILE_DIR_NAME     "Track"
 
 #define CONFIG_MAP_USE_WGS84_DEFAULT          false
 #define CONFIG_MAP_DIR_PATH_DEFAULT           "/MAP"
