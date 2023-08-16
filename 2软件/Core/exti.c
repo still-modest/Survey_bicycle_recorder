@@ -118,19 +118,6 @@ void attachInterrupt(uint8_t Pin, EXTI_CallbackFunction_t function, EXTITrigger_
     EXTIx_Init(Pin, function, Trigger_Mode, EXTI_PreemptionPriority_Default, EXTI_SubPriority_Default);
 }
 
-//霍尔开关外部中断配置
-/**
-  * @brief  外部中断初始化 (Arduino)
-  * @param  Pin: 引脚编号
-  * @param  function: 回调函数
-  * @param  Trigger_Mode: 触发方式
-  * @retval 无
-  */
-void HALL_attachInterrupt(uint8_t Pin, EXTI_CallbackFunction_t function, EXTITrigger_Type Trigger_Mode)
-{
-    EXTIx_Init(Pin, function, Trigger_Mode, HALL_EXTI_PreemptionPriority_Default, HALL_EXTI_SubPriority_Default);
-}
-
 /**
   * @brief  关闭给定的中断 (Arduino)
   * @param  Pin: 引脚编号

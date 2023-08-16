@@ -264,41 +264,6 @@ void Timer_SetInterrupt(TIM_TypeDef* TIMx, uint32_t time, Timer_CallbackFunction
     );
 }
 
-//霍尔开关定时器配置
-/**
-  * @brief  定时中断配置
-  * @param  TIMx:定时器地址
-  * @param  time: 中断时间(微秒)
-  * @param  function: 定时中断回调函数
-  * @retval 无
-  */
-void HALL_Timer_SetInterrupt(TIM_TypeDef* TIMx, uint32_t time, Timer_CallbackFunction_t function)
-{
-    uint16_t period, prescaler;
-    uint32_t clock = Timer_GetClockMax(TIMx);
-    
-    if(!IS_TMR_ALL_PERIPH(TIMx) || time == 0)
-        return;
-    
-    /*将定时中断时间转换为重装值和时钟分频值*/
-    Timer_TimeToArrPsc(
-        time,
-        clock,
-        &period, 
-        &prescaler
-    );
-    
-    /*定时中断配置*/
-    Timer_SetInterruptBase(
-        TIMx, 
-        period,
-        prescaler,
-        function, 
-        HALL_Timer_PreemptionPriority_Default, 
-        HALL_Timer_SubPriority_Default
-    );
-}
-
 /**
   * @brief  更新定时中断频率
   * @param  TIMx:定时器地址

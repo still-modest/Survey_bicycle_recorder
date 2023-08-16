@@ -33,19 +33,11 @@ extern "C" {
 #define Timer_SubPriority_Default        3
 #define Timer_GetClockMax(TIMx)          F_CPU
    
-	//
-	#define HALL_Timer_PreemptionPriority_Default 1
-	#define HALL_Timer_SubPriority_Default        3
-	//
 typedef void(*Timer_CallbackFunction_t)(void);
     
 void Timer_ClockCmd(TIM_TypeDef* TIMx, FunctionalState NewState);
 uint32_t Timer_GetClockOut(TIM_TypeDef* TIMx);
 void Timer_SetInterrupt(TIM_TypeDef* TIMx, uint32_t time, Timer_CallbackFunction_t function);
-	
-	//
-void HALL_Timer_SetInterrupt(TIM_TypeDef* TIMx, uint32_t time, Timer_CallbackFunction_t function);
-	//
 void Timer_SetInterruptTimeUpdate(TIM_TypeDef* TIMx, uint32_t time);
 void Timer_SetInterruptFreqUpdate(TIM_TypeDef* TIMx, uint32_t freq);
 void Timer_SetInterruptBase(

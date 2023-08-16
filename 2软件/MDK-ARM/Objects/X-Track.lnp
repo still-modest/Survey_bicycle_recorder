@@ -104,7 +104,6 @@
 ".\objects\hal_power.o"
 ".\objects\hal_sd_card.o"
 ".\objects\rt_sys.o"
-".\objects\hal_hall.o"
 ".\objects\lv_disp.o"
 ".\objects\lv_event.o"
 ".\objects\lv_group.o"
