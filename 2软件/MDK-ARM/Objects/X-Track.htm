@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\X-Track.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\X-Track.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Nov 11 16:04:57 2021
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Thu Nov 18 15:20:31 2021
 <BR><P>
 <H3>Maximum Stack Usage =       2736 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1001,18 +1001,18 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::parseDegrees(const char*, RawDegrees&)
 <LI><a href="#[35b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::parseDecimal(const char*)
+<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isspace
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_wcrtomb
 <LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
-<LI><a href="#[5ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;isspace
 <LI><a href="#[21e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_mbrtowc
+<LI><a href="#[5ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
 </UL>
 
 <P><STRONG><a name="[1bf]"></a>malloc</STRONG> (Thumb, 94 bytes, Stack size 16 bytes, h1_alloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
-<LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+<BR>[Calls]<UL><LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+<LI><a href="#[1c1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Full
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_atexit
 <LI><a href="#[237]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__flsbuf
@@ -1026,8 +1026,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
-<LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<BR>[Called By]<UL><LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_finalize
 <LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fclose_internal
 <LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_terminateio
 </UL>
@@ -1037,8 +1037,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataProc::MakeTimeString(unsigned long long, char*, unsigned short)
 <LI><a href="#[679]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ntoa_long_long
-<LI><a href="#[2a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
 <LI><a href="#[567]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Print::printNumber(unsigned long long, unsigned char)
+<LI><a href="#[2a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
 </UL>
 
 <P><STRONG><a name="[88e]"></a>_ll_udiv</STRONG> (Thumb, 238 bytes, Stack size 48 bytes, lludivv7m.o(.text), UNUSED)
@@ -1086,10 +1086,10 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_wctomb
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+<LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
 <LI><a href="#[1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_hex_real
 <LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
-<LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
 </UL>
 
 <P><STRONG><a name="[1c9]"></a>_printf_post_padding</STRONG> (Thumb, 34 bytes, Stack size 16 bytes, _printf_pad.o(.text))
@@ -1097,10 +1097,10 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_wctomb
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_str
+<LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
 <LI><a href="#[1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_hex_real
 <LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
-<LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
 </UL>
 
 <P><STRONG><a name="[1ca]"></a>_printf_truncate_signed</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, _printf_truncate.o(.text))
@@ -1256,9 +1256,9 @@ Global Symbols
 <LI><a href="#[173]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___14_DP_Storage_cpp_d0a046f3
 <LI><a href="#[175]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___16_ResourcePool_cpp_3959e929
 <LI><a href="#[17e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___8_Wire_cpp_928ee5ff
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 <LI><a href="#[5e1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_get_cats()
 <LI><a href="#[5e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::classic()
-<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 </UL>
 
 <P><STRONG><a name="[5f8]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
@@ -1270,8 +1270,8 @@ Global Symbols
 <P><STRONG><a name="[58b]"></a>memcmp</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, memcmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = memcmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
-<LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
+<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
 </UL>
 
 <P><STRONG><a name="[2b3]"></a>strcpy</STRONG> (Thumb, 72 bytes, Stack size 12 bytes, strcpy.o(.text))
@@ -1335,8 +1335,8 @@ Global Symbols
 <LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::read(void*, unsigned)
 <LI><a href="#[5a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::mkdir(FatFile*, fname_t*)
 <LI><a href="#[1de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memmove
-<LI><a href="#[5ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
 <LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcpy
+<LI><a href="#[5ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::char_traits&lang;char&rang;::copy(char*, const char*, unsigned)
 </UL>
 
 <P><STRONG><a name="[1dc]"></a>__rt_memcpy</STRONG> (Thumb, 138 bytes, Stack size 0 bytes, rt_memcpy_v6.o(.text), UNUSED)
@@ -1370,8 +1370,8 @@ Global Symbols
 <LI><a href="#[449]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, const char*, unsigned char)
 <LI><a href="#[1bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cm_backtrace_fault
 <LI><a href="#[3a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ArduinoJson6184_11::DeserializationError ArduinoJson6184_11::deserialize&lang;ArduinoJson6184_11::JsonDeserializer, FileWrapper, ArduinoJson6184_11::AllowAllFilter&rang;(ArduinoJson6184_11::JsonDocument&, T2&, ArduinoJson6184_11::NestingLimit, T3)
-<LI><a href="#[362]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSLocation::commit()
 <LI><a href="#[5a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::mkdir(FatFile*, fname_t*)
+<LI><a href="#[362]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSLocation::commit()
 <LI><a href="#[1dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memcpy
 <LI><a href="#[1fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_memmove_w
 </UL>
@@ -1411,9 +1411,9 @@ Global Symbols
 <LI><a href="#[33a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PageManager::GetLoadAnimAttr(unsigned char, PageManager::LoadAnimAttr_t*)
 <LI><a href="#[56d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openRoot(FatVolume*)
 <LI><a href="#[322]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ButtonEvent::ButtonEvent(unsigned short, unsigned short, unsigned short)
-<LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCluster(FatFile*)
 <LI><a href="#[591]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCachedEntry(FatFile*, unsigned short, unsigned char, unsigned char)
 <LI><a href="#[58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addDirCluster()
+<LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCluster(FatFile*)
 <LI><a href="#[6b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_call_stack
 <LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fclose_internal
 <LI><a href="#[22d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fopen
@@ -1457,9 +1457,9 @@ Global Symbols
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lv_img_decoder_built_in_info
 <LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_dir_read(_lv_fs_drv_t*, void*, char*)
 <LI><a href="#[35f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::endOfTermHandler()
+<LI><a href="#[1b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric
 <LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_ctype
 <LI><a href="#[5ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
-<LI><a href="#[1b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric
 </UL>
 
 <P><STRONG><a name="[897]"></a>__use_two_region_memory</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)
@@ -1502,10 +1502,10 @@ Global Symbols
 <P><STRONG><a name="[1d7]"></a>__aeabi_errno_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_errno_addr_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
 <LI><a href="#[1d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[1f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
 <LI><a href="#[1d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
 <LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 <LI><a href="#[1e9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__read_errno
-<LI><a href="#[1f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
 <LI><a href="#[23d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ftell_internal
 <LI><a href="#[217]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_value
 </UL>
@@ -1537,10 +1537,10 @@ Global Symbols
 <P><STRONG><a name="[1ac]"></a>_init_alloc</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, init_alloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = _init_alloc &rArr; __rt_SIGRTMEM &rArr; __rt_SIGRTMEM_inner &rArr; __default_signal_display
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
-<LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
+<BR>[Calls]<UL><LI><a href="#[1c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_heap_descriptor
 <LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
 <LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_ProvideMemory
+<LI><a href="#[1e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__Heap_Initialize
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_lib_init_heap_2
 </UL>
@@ -1592,10 +1592,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
 <LI><a href="#[1c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
-<LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 <LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale
 <LI><a href="#[1f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_infnan
 <LI><a href="#[1f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
+<LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[18c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec
 </UL>
@@ -1690,8 +1690,8 @@ Global Symbols
 <P><STRONG><a name="[19a]"></a>_printf_longlong_dec</STRONG> (Thumb, 108 bytes, Stack size 24 bytes, _printf_longlong_dec.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = _printf_longlong_dec &rArr; _printf_int_common &rArr; _printf_post_padding
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
-<LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ll_udiv10
+<BR>[Calls]<UL><LI><a href="#[1f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ll_udiv10
+<LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_int_common
 </UL>
 <BR>[Called By]<UL><LI><a href="#[19c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_llu
 <LI><a href="#[19b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_lld
@@ -1723,8 +1723,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = strtol &rArr; _strtoul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
-<LI><a href="#[1d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 <LI><a href="#[1f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
+<LI><a href="#[1d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
 <LI><a href="#[1d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
@@ -1874,17 +1874,17 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 <LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
 </UL>
-<BR>[Called By]<UL><LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
-<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_throw_exception_noex(int, char*)
-<LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
+<BR>[Called By]<UL><LI><a href="#[211]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_get_globals
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to arm_exceptions_c]::__default_terminate_handler()
+<LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
+<LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_throw_exception_noex(int, char*)
 </UL>
 
 <P><STRONG><a name="[1fd]"></a>__sig_exit</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, defsig_exit.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_exit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
-<LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<BR>[Called By]<UL><LI><a href="#[1e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTMEM
+<LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGPVFN
 <LI><a href="#[222]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGRTRED
 <LI><a href="#[20a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_SIGABRT
 </UL>
@@ -2117,8 +2117,8 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[22d]"></a>fopen</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, fopen.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[1bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<BR><BR>[Calls]<UL><LI><a href="#[1bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;malloc
+<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;freopen
 </UL>
 
@@ -2126,8 +2126,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 404<LI>Call Chain = _fclose_internal &rArr; _fflush &rArr; _writebuf &rArr; _sys_write &rArr; FatFile::write(const void*, unsigned) &rArr; FatFile::addCluster() &rArr; FatVolume::allocateCluster(unsigned, unsigned*) &rArr; FatVolume::fatPut(unsigned, unsigned) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[22f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_close
-<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[1c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;free
+<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[22e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fflush
 </UL>
 <BR>[Called By]<UL><LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;freopen
@@ -2335,8 +2335,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
 <LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_div_common
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-<LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<BR>[Called By]<UL><LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[219]"></a>_btod_edivd</STRONG> (Thumb, 42 bytes, Stack size 28 bytes, btod.o(CL$$btod_edivd))
@@ -2354,8 +2354,8 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__btod_mult_common
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_e2e
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
-<LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<BR>[Called By]<UL><LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<LI><a href="#[1eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_fp_digits
 </UL>
 
 <P><STRONG><a name="[218]"></a>_btod_emuld</STRONG> (Thumb, 42 bytes, Stack size 28 bytes, btod.o(CL$$btod_emuld))
@@ -2692,18 +2692,18 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[266]"></a>GPS_Transform</STRONG> (Thumb, 420 bytes, Stack size 104 bytes, gps_transform.o(i.GPS_Transform))
-<BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLon(double, double)
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLat(double, double)
-<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_cos
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapConv::ConvertMapCoordinate(double, double, int*, int*)
 </UL>
@@ -2717,8 +2717,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = NVIC_Init
 </UL>
 <BR>[Called By]<UL><LI><a href="#[393]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareSerial::begin(unsigned, SERIAL_Config, unsigned char, unsigned char)
-<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTIx_Init
 <LI><a href="#[29f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_SetInterruptBase
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTIx_Init
 </UL>
 
 <P><STRONG><a name="[7fe]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, misc.o(i.NVIC_PriorityGroupConfig))
@@ -2791,8 +2791,8 @@ Global Symbols
 <LI><a href="#[3bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIClass::begin()
 <LI><a href="#[393]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardwareSerial::begin(unsigned, SERIAL_Config, unsigned char, unsigned char)
 <LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIOx_Init
-<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTIx_Init
 <LI><a href="#[28e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_ClockCmd
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EXTIx_Init
 </UL>
 
 <P><STRONG><a name="[24a]"></a>RCC_APB2PeriphResetCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, at32f4xx_rcc.o(i.RCC_APB2PeriphResetCmd))
@@ -2941,8 +2941,8 @@ Global Symbols
 <P><STRONG><a name="[28a]"></a>SPI_I2S_Reset</STRONG> (Thumb, 84 bytes, Stack size 8 bytes, at32f4xx_spi.o(i.SPI_I2S_Reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SPI_I2S_Reset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
-<LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<BR>[Calls]<UL><LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3bb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPIClass::begin()
 </UL>
@@ -3150,8 +3150,8 @@ Global Symbols
 <P><STRONG><a name="[29c]"></a>TMR_Reset</STRONG> (Thumb, 206 bytes, Stack size 8 bytes, at32f4xx_tim.o(i.TMR_Reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = TMR_Reset
 </UL>
-<BR>[Calls]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
-<LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<BR>[Calls]<UL><LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphResetCmd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphResetCmd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[29f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_SetInterruptBase
 </UL>
@@ -3176,8 +3176,8 @@ Global Symbols
 <P><STRONG><a name="[29d]"></a>Timer_SetInterrupt</STRONG> (Thumb, 136 bytes, Stack size 32 bytes, timer.o(i.Timer_SetInterrupt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = Timer_SetInterrupt &rArr; Timer_SetInterruptBase &rArr; NVIC_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_TimeToArrPsc
-<LI><a href="#[29f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_SetInterruptBase
+<BR>[Calls]<UL><LI><a href="#[29f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_SetInterruptBase
+<LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_TimeToArrPsc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[49e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL::HAL_Init()
 </UL>
@@ -3199,9 +3199,9 @@ Global Symbols
 <P><STRONG><a name="[2a2]"></a>Timer_SetInterruptTimeUpdate</STRONG> (Thumb, 134 bytes, Stack size 24 bytes, timer.o(i.Timer_SetInterruptTimeUpdate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = Timer_SetInterruptTimeUpdate &rArr; Timer_TimeToArrPsc
 </UL>
-<BR>[Calls]<UL><LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_TimeToArrPsc
-<LI><a href="#[2a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_SetAutoreload
+<BR>[Calls]<UL><LI><a href="#[2a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_SetAutoreload
 <LI><a href="#[2a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TMR_DIVConfig
+<LI><a href="#[29e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Timer_TimeToArrPsc
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tone(unsigned char, unsigned)
 </UL>
@@ -4222,8 +4222,8 @@ Global Symbols
 <P><STRONG><a name="[35b]"></a>TinyGPSPlus::parseDecimal(const char*)</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, tinygps++.o(i._ZN11TinyGPSPlus12parseDecimalEPKc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = TinyGPSPlus::parseDecimal(const char*) &rArr; atol &rArr; strtol &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
-<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<BR>[Calls]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::endOfTermHandler()
 </UL>
@@ -4231,23 +4231,23 @@ Global Symbols
 <P><STRONG><a name="[35c]"></a>TinyGPSPlus::parseDegrees(const char*, RawDegrees&)</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, tinygps++.o(i._ZN11TinyGPSPlus12parseDegreesEPKcR10RawDegrees))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = TinyGPSPlus::parseDegrees(const char*, RawDegrees&) &rArr; atol &rArr; strtol &rArr; _strtoul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
-<LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<BR>[Calls]<UL><LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<LI><a href="#[1d9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atol
 </UL>
 <BR>[Called By]<UL><LI><a href="#[367]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSLocation::setLongitude(const char*)
 <LI><a href="#[366]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSLocation::setLatitude(const char*)
 </UL>
 
 <P><STRONG><a name="[35d]"></a>TinyGPSPlus::distanceBetween(double, double, double, double)</STRONG> (Thumb, 396 bytes, Stack size 64 bytes, tinygps++.o(i._ZN11TinyGPSPlus15distanceBetweenEdddd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
+<BR>[Calls]<UL><LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_cos
 <LI><a href="#[35e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan2
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double)
 </UL>
@@ -5045,10 +5045,10 @@ Global Symbols
 <P><STRONG><a name="[3c7]"></a>TinyGPSLocation::lat()</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, tinygps++.o(i._ZN15TinyGPSLocation3latEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = TinyGPSLocation::lat() &rArr; __aeabi_ddiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL::GPS_GetInfo(HAL::GPS_Info_t*)
 </UL>
@@ -5056,10 +5056,10 @@ Global Symbols
 <P><STRONG><a name="[3ca]"></a>TinyGPSLocation::lng()</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, tinygps++.o(i._ZN15TinyGPSLocation3lngEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = TinyGPSLocation::lng() &rArr; __aeabi_ddiv
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL::GPS_GetInfo(HAL::GPS_Info_t*)
 </UL>
@@ -5159,19 +5159,19 @@ Global Symbols
 <P><STRONG><a name="[3d3]"></a>TrackPointFilter::GetIsOnSameSide(const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*)</STRONG> (Thumb, 170 bytes, Stack size 56 bytes, trackpointfilter.o(i._ZN16TrackPointFilter15GetIsOnSameSideEPKNS_6Line_tEPKNS_7Point_tES5_))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = TrackPointFilter::GetIsOnSameSide(const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*)
 </UL>
 
 <P><STRONG><a name="[3d5]"></a>TrackPointFilter::GetVerticalLine(TrackPointFilter::Line_t*, const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*)</STRONG> (Thumb, 98 bytes, Stack size 32 bytes, trackpointfilter.o(i._ZN16TrackPointFilter15GetVerticalLineEPNS_6Line_tEPKS0_PKNS_7Point_tE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = TrackPointFilter::GetVerticalLine(TrackPointFilter::Line_t*, const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = TrackPointFilter::GetVerticalLine(TrackPointFilter::Line_t*, const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*)
 </UL>
@@ -5198,15 +5198,15 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[3d6]"></a>TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*)</STRONG> (Thumb, 370 bytes, Stack size 96 bytes, trackpointfilter.o(i._ZN16TrackPointFilter7GetLineEPNS_6Line_tEPKNS_7Point_tES4_))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_ddiv
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fabs
+<BR>[Calls]<UL><LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fabs
 <LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*)
 </UL>
@@ -5224,14 +5224,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::abs(double)
 <LI><a href="#[3dc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::QuickSort(double)
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*)
 </UL>
 
 <P><STRONG><a name="[3de]"></a>TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*)</STRONG> (Thumb, 200 bytes, Stack size 80 bytes, trackpointfilter.o(i._ZN16TrackPointFilter9PushPointEPKNS_7Point_tE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_ddiv
+<BR><BR>[Stack]<UL><LI>Max Depth = 208<LI>Call Chain = TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::GetOffset(const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*)
 <LI><a href="#[3d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*)
@@ -5248,8 +5248,8 @@ Global Symbols
 <P><STRONG><a name="[3dc]"></a>TrackPointFilter::QuickSort(double)</STRONG> (Thumb, 86 bytes, Stack size 16 bytes, trackpointfilter.o(i._ZN16TrackPointFilter9QuickSortEd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = TrackPointFilter::QuickSort(double) &rArr; __aeabi_d2f
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<BR>[Calls]<UL><LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
+<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::GetOffset(const TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*)
 </UL>
@@ -5353,18 +5353,18 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[3e4]"></a>Microsoft_MapPoint::TileSystem::LatLongToPixelXY(double, double, int, int*, int*)</STRONG> (Thumb, 384 bytes, Stack size 64 bytes, tilesystem.o(i._ZN18Microsoft_MapPoint10TileSystem16LatLongToPixelXYEddiPiS1_))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = Microsoft_MapPoint::TileSystem::LatLongToPixelXY(double, double, int, int*, int*) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = Microsoft_MapPoint::TileSystem::LatLongToPixelXY(double, double, int, int*, int*) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to TileSystem_cpp]::Clip(double, double, double)
-<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[3e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_log
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[3e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapConv::ConvertMapCoordinate(double, double, int*, int*)
 </UL>
@@ -5605,11 +5605,11 @@ Global Symbols
 <LI><a href="#[477]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSDate::month()
 <LI><a href="#[476]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSDate::year()
 <LI><a href="#[478]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSDate::day()
+<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3eb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to DP_GPS_cpp]::onTimer(Account*)
 <LI><a href="#[85]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to DP_GPS_cpp]::onEvent(Account*, Account::EventParam_t*)
@@ -5876,7 +5876,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[498]"></a>HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double)</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, hal_gps.o(i._ZN3HAL21GPS_GetDistanceOffsetEPNS_10GPS_Info_tEdd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 248<LI>Call Chain = HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[35d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::distanceBetween(double, double, double, double)
 </UL>
@@ -6367,7 +6367,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[4f9]"></a>Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*)</STRONG> (Thumb, 176 bytes, Stack size 168 bytes, livemapmodel.o(i._ZN4Page12LiveMapModel11TrackReloadEPFvP16TrackPointFilterPKNS1_7Point_tEEPv))
-<BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_ddiv
+<BR><BR>[Stack]<UL><LI>Max Depth = 376<LI>Call Chain = Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Account::Pull(const char*, void*, unsigned)
 <LI><a href="#[38e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackPointFilter::~TrackPointFilter()
@@ -6878,8 +6878,8 @@ Global Symbols
 <LI>Call Chain = Page::SystemInfosModel::GetGPSInfo(float*, float*, float*, char*, unsigned, float*, float*) &rArr; __2snprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Account::Pull(const char*, void*, unsigned)
-<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2snprintf
+<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Page::SystemInfos::Update()
 </UL>
@@ -7001,7 +7001,7 @@ Global Symbols
 
 <P><STRONG><a name="[539]"></a>Page::LiveMap::CheckPosition()</STRONG> (Thumb, 196 bytes, Stack size 112 bytes, livemap.o(i._ZN4Page7LiveMap13CheckPositionEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 536 + Unknown Stack Size
-<LI>Call Chain = Page::LiveMap::CheckPosition() &rArr; MapConv::ConvertMapCoordinate(double, double, int*, int*) &rArr; GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<LI>Call Chain = Page::LiveMap::CheckPosition() &rArr; MapConv::ConvertMapCoordinate(double, double, int*, int*) &rArr; GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapConv::SetLevel(int)
 <LI><a href="#[4ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapConv::ConvertMapCoordinate(double, double, int*, int*)
@@ -7044,7 +7044,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[541]"></a>Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int)</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, livemap.o(i._ZN4Page7LiveMap15TrackLineReloadEPKN15TrackLineFilter6Area_tEii))
-<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_ddiv
+<BR><BR>[Stack]<UL><LI>Max Depth = 400<LI>Call Chain = Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3d1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TrackLineFilter::PushPoint(int, int)
 <LI><a href="#[4f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*)
@@ -7163,7 +7163,7 @@ Global Symbols
 
 <P><STRONG><a name="[53c]"></a>Page::LiveMap::onMapTileContRefresh(const TrackLineFilter::Area_t*, int, int)</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, livemap.o(i._ZN4Page7LiveMap20onMapTileContRefreshEPKN15TrackLineFilter6Area_tEii))
 <BR><BR>[Stack]<UL><LI>Max Depth = 424 + Unknown Stack Size
-<LI>Call Chain = Page::LiveMap::onMapTileContRefresh(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_ddiv
+<LI>Call Chain = Page::LiveMap::onMapTileContRefresh(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int) &rArr; Page::LiveMapModel::TrackReload(void(*)(TrackPointFilter*, const TrackPointFilter::Point_t*), void*) &rArr; TrackPointFilter::PushPoint(const TrackPointFilter::Point_t*) &rArr; TrackPointFilter::GetLine(TrackPointFilter::Line_t*, const TrackPointFilter::Point_t*, const TrackPointFilter::Point_t*) &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[544]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Page::LiveMap::MapTileContReload()
 <LI><a href="#[541]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Page::LiveMap::TrackLineReload(const TrackLineFilter::Area_t*, int, int)
@@ -7565,12 +7565,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
 <LI><a href="#[43b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_new_cookie
+<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcpy
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_delete
 <LI><a href="#[561]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::operator =(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&)
 <LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const std::allocator&lang;char&rang;&)
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()
-<LI><a href="#[560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_new_cookie
-<LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::_C_init()
 </UL>
@@ -8218,17 +8218,17 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openNext(FatFile*, unsigned char)
 <LI><a href="#[2b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::getName(char*, unsigned)
-<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
 <LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
+<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
 </UL>
 
 <P><STRONG><a name="[58c]"></a>FatFile::addDirCluster()</STRONG> (Thumb, 106 bytes, Stack size 24 bytes, fatfile.o(i._ZN7FatFile13addDirClusterEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 300<LI>Call Chain = FatFile::addDirCluster() &rArr; FatFile::addCluster() &rArr; FatVolume::allocateCluster(unsigned, unsigned*) &rArr; FatVolume::fatPut(unsigned, unsigned) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
+<BR>[Calls]<UL><LI><a href="#[586]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addCluster()
+<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
 <LI><a href="#[58f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::writeBlock(unsigned, const unsigned char*)
 <LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
-<LI><a href="#[586]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addCluster()
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
@@ -8240,9 +8240,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[5a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::getSFN(char*)
-<LI><a href="#[5a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::mkdir(FatFile*, fname_t*)
+<BR>[Called By]<UL><LI><a href="#[5a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::mkdir(FatFile*, fname_t*)
 <LI><a href="#[59f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::sync()
+<LI><a href="#[5a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::getSFN(char*)
 </UL>
 
 <P><STRONG><a name="[59a]"></a>FatFile::parsePathName(const char*, fname_t*, const char**)</STRONG> (Thumb, 456 bytes, Stack size 40 bytes, fatfilelfn.o(i._ZN7FatFile13parsePathNameEPKcP7fname_tPS1_))
@@ -8276,13 +8276,13 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 436<LI>Call Chain = FatFile::open(FatFile*, fname_t*, unsigned char) &rArr; FatFile::lfnUniqueSfn(fname_t*) &rArr; FatFile::readDirCache(bool) &rArr; FatFile::read(void*, unsigned) &rArr; FatVolume::fatGet(unsigned, unsigned*) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::seekSet(unsigned)
-<LI><a href="#[595]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lfnToLower(char)
-<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
-<LI><a href="#[594]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lfnGetChar(longDirectoryEntry*, unsigned char)
 <LI><a href="#[596]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnChecksum(unsigned char*)
 <LI><a href="#[591]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCachedEntry(FatFile*, unsigned short, unsigned char, unsigned char)
 <LI><a href="#[58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addDirCluster()
 <LI><a href="#[58a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::readDirCache(bool)
+<LI><a href="#[595]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lfnToLower(char)
+<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
+<LI><a href="#[594]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lfnGetChar(longDirectoryEntry*, unsigned char)
 <LI><a href="#[1e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[58b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;memcmp
 </UL>
@@ -8296,11 +8296,11 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[56d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openRoot(FatVolume*)
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::close()
+<LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
+<LI><a href="#[59a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::parsePathName(const char*, fname_t*, const char**)
 <LI><a href="#[598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isOpen() const
 <LI><a href="#[599]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isDir() const
 <LI><a href="#[597]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::FatFile()
-<LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
-<LI><a href="#[59a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::parsePathName(const char*, fname_t*, const char**)
 <LI><a href="#[1dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_open
@@ -8311,12 +8311,12 @@ Global Symbols
 <P><STRONG><a name="[2fd]"></a>FatFile::read(void*, unsigned)</STRONG> (Thumb, 334 bytes, Stack size 40 bytes, fatfile.o(i._ZN7FatFile4readEPvj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 284<LI>Call Chain = FatFile::read(void*, unsigned) &rArr; FatVolume::fatGet(unsigned, unsigned*) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
-<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
-<LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
-<LI><a href="#[59d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlocks(unsigned, unsigned char*, unsigned)
+<BR>[Calls]<UL><LI><a href="#[59d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlocks(unsigned, unsigned char*, unsigned)
 <LI><a href="#[59b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::fatGet(unsigned, unsigned*)
 <LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatCache::sync()
+<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
+<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
+<LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_read(_lv_fs_drv_t*, void*, void*, unsigned, unsigned*)
@@ -8326,8 +8326,8 @@ Global Symbols
 <P><STRONG><a name="[59f]"></a>FatFile::sync()</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, fatfile.o(i._ZN7FatFile4syncEv))
 <BR><BR>[Stack]<UL><LI>Max Depth = 244<LI>Call Chain = FatFile::sync() &rArr; FatFile::cacheDirEntry(unsigned char) &rArr; FatVolume::cacheFetchData(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
-<LI><a href="#[590]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::cacheDirEntry(unsigned char)
+<BR>[Calls]<UL><LI><a href="#[590]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::cacheDirEntry(unsigned char)
+<LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::write(const void*, unsigned)
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::close()
@@ -8351,14 +8351,14 @@ Global Symbols
 <P><STRONG><a name="[5a1]"></a>FatFile::mkdir(FatFile*, fname_t*)</STRONG> (Thumb, 184 bytes, Stack size 56 bytes, fatfile.o(i._ZN7FatFile5mkdirEPS_P7fname_t))
 <BR><BR>[Stack]<UL><LI>Max Depth = 492<LI>Call Chain = FatFile::mkdir(FatFile*, fname_t*) &rArr; FatFile::open(FatFile*, fname_t*, unsigned char) &rArr; FatFile::lfnUniqueSfn(fname_t*) &rArr; FatFile::readDirCache(bool) &rArr; FatFile::read(void*, unsigned) &rArr; FatVolume::fatGet(unsigned, unsigned*) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
-<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
-<LI><a href="#[5a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::rewind()
-<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
-<LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
+<BR>[Calls]<UL><LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
 <LI><a href="#[59f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::sync()
 <LI><a href="#[590]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::cacheDirEntry(unsigned char)
 <LI><a href="#[58c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addDirCluster()
+<LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
+<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
+<LI><a href="#[5a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::rewind()
+<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
 <LI><a href="#[1dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
@@ -8370,12 +8370,12 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[56d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openRoot(FatVolume*)
 <LI><a href="#[2b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::close()
-<LI><a href="#[598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isOpen() const
-<LI><a href="#[599]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isDir() const
-<LI><a href="#[597]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::FatFile()
 <LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
 <LI><a href="#[59a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::parsePathName(const char*, fname_t*, const char**)
 <LI><a href="#[5a1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::mkdir(FatFile*, fname_t*)
+<LI><a href="#[598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isOpen() const
+<LI><a href="#[599]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isDir() const
+<LI><a href="#[597]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::FatFile()
 <LI><a href="#[1dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[448]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to HAL_SD_CARD_cpp]::SD_CheckDir(const char*)
@@ -8385,14 +8385,14 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 316<LI>Call Chain = FatFile::write(const void*, unsigned) &rArr; FatFile::addCluster() &rArr; FatVolume::allocateCluster(unsigned, unsigned*) &rArr; FatVolume::fatPut(unsigned, unsigned) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::seekSet(unsigned)
-<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
-<LI><a href="#[58f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::writeBlock(unsigned, const unsigned char*)
-<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
-<LI><a href="#[5a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::writeBlocks(unsigned, const unsigned char*, unsigned)
 <LI><a href="#[59b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::fatGet(unsigned, unsigned*)
 <LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatCache::sync()
 <LI><a href="#[59f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::sync()
 <LI><a href="#[586]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::addCluster()
+<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
+<LI><a href="#[58f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::writeBlock(unsigned, const unsigned char*)
+<LI><a href="#[58d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::clusterFirstBlock(unsigned) const
+<LI><a href="#[5a3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::writeBlocks(unsigned, const unsigned char*, unsigned)
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PrintFile::write(unsigned char)
@@ -8427,10 +8427,10 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 372<LI>Call Chain = FatFile::getName(char*, unsigned) &rArr; FatFile::readDirCache(bool) &rArr; FatFile::read(void*, unsigned) &rArr; FatVolume::fatGet(unsigned, unsigned*) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[2fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::seekSet(unsigned)
+<LI><a href="#[58a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::readDirCache(bool)
 <LI><a href="#[5a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::getSFN(char*)
 <LI><a href="#[588]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCluster(FatFile*)
 <LI><a href="#[594]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lfnGetChar(longDirectoryEntry*, unsigned char)
-<LI><a href="#[58a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::readDirCache(bool)
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_dir_read(_lv_fs_drv_t*, void*, char*)
 </UL>
@@ -8445,20 +8445,20 @@ Global Symbols
 <LI><a href="#[22b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sys_open
 <LI><a href="#[2b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::getName(char*, unsigned)
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_seek(_lv_fs_drv_t*, void*, unsigned, lv_fs_whence_t)
-<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
-<LI><a href="#[5a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::rewind()
 <LI><a href="#[593]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::open(FatFile*, fname_t*, unsigned char)
 <LI><a href="#[591]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCachedEntry(FatFile*, unsigned short, unsigned char, unsigned char)
+<LI><a href="#[589]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnUniqueSfn(fname_t*)
+<LI><a href="#[5a2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::rewind()
 </UL>
 
 <P><STRONG><a name="[2b1]"></a>FatFile::openNext(FatFile*, unsigned char)</STRONG> (Thumb, 134 bytes, Stack size 32 bytes, fatfile.o(i._ZN7FatFile8openNextEPS_h))
 <BR><BR>[Stack]<UL><LI>Max Depth = 332<LI>Call Chain = FatFile::openNext(FatFile*, unsigned char) &rArr; FatFile::readDirCache(bool) &rArr; FatFile::read(void*, unsigned) &rArr; FatVolume::fatGet(unsigned, unsigned*) &rArr; FatVolume::cacheFetchFat(unsigned, unsigned char) &rArr; FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isOpen() const
-<LI><a href="#[599]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isDir() const
-<LI><a href="#[596]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnChecksum(unsigned char*)
+<BR>[Calls]<UL><LI><a href="#[596]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::lfnChecksum(unsigned char*)
 <LI><a href="#[591]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::openCachedEntry(FatFile*, unsigned short, unsigned char, unsigned char)
 <LI><a href="#[58a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::readDirCache(bool)
+<LI><a href="#[598]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isOpen() const
+<LI><a href="#[599]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::isDir() const
 </UL>
 <BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fs_dir_read(_lv_fs_drv_t*, void*, char*)
 </UL>
@@ -8647,7 +8647,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[4ab]"></a>MapConv::ConvertMapCoordinate(double, double, int*, int*)</STRONG> (Thumb, 68 bytes, Stack size 56 bytes, mapconv.o(i._ZN7MapConv20ConvertMapCoordinateEddPiS0_))
-<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = MapConv::ConvertMapCoordinate(double, double, int*, int*) &rArr; GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 424<LI>Call Chain = MapConv::ConvertMapCoordinate(double, double, int*, int*) &rArr; GPS_Transform &rArr; [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Microsoft_MapPoint::TileSystem::LatLongToPixelXY(double, double, int, int*, int*)
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPS_Transform
@@ -8844,11 +8844,11 @@ Global Symbols
 <P><STRONG><a name="[5c0]"></a>FatCache::read(unsigned, unsigned char)</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, fatvolume.o(i._ZN8FatCache4readEjh))
 <BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = FatCache::read(unsigned, unsigned char) &rArr; FatCache::sync() &rArr; FatVolume::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::writeBlock(unsigned, const unsigned char*) &rArr; SdSpiCard::cardCommand(unsigned char, unsigned) &rArr; SdSpiCard::spiStart() &rArr; SPIClass::beginTransaction(SPISettings) &rArr; SPIClass::setDataMode(unsigned char) &rArr; SPI_Init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
-<LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatCache::sync()
+<BR>[Calls]<UL><LI><a href="#[59c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatCache::sync()
+<LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
-<LI><a href="#[5cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchFat(unsigned, unsigned char)
+<BR>[Called By]<UL><LI><a href="#[5cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchFat(unsigned, unsigned char)
+<LI><a href="#[58e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheFetchData(unsigned, unsigned char)
 </UL>
 
 <P><STRONG><a name="[59c]"></a>FatCache::sync()</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, fatvolume.o(i._ZN8FatCache4syncEv))
@@ -8858,8 +8858,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[30f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::write(const void*, unsigned)
 <LI><a href="#[2fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatFile::read(void*, unsigned)
-<LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
 <LI><a href="#[5c0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatCache::read(unsigned, unsigned char)
+<LI><a href="#[5a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FatVolume::cacheSync()
 </UL>
 
 <P><STRONG><a name="[5c1]"></a>SPIClass::setBitOrder(unsigned short)</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, spi.o(i._ZN8SPIClass11setBitOrderEt))
@@ -9336,8 +9336,8 @@ Global Symbols
 <LI><a href="#[5d6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::spiStop()
 <LI><a href="#[5ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::isTimedOut(unsigned short, unsigned short)
 </UL>
-<BR>[Called By]<UL><LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
-<LI><a href="#[59d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlocks(unsigned, unsigned char*, unsigned)
+<BR>[Called By]<UL><LI><a href="#[59d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlocks(unsigned, unsigned char*, unsigned)
+<LI><a href="#[59e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readBlock(unsigned, unsigned char*)
 <LI><a href="#[5dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SdSpiCard::readRegister(unsigned char, void*)
 </UL>
 
@@ -9587,8 +9587,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*) &rArr; __rw::__rw_use_c_lib_locale::~__rw_use_c_lib_locale() &rArr; operator delete[] (void*) &rArr; lv_mem_free &rArr; lv_tlsf_free &rArr; block_merge_next &rArr; block_remove &rArr; remove_free_block
 </UL>
 <BR>[Calls]<UL><LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
-<LI><a href="#[2b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[1be]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
+<LI><a href="#[2b5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[565]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
 <LI><a href="#[566]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::~__rw_use_c_lib_locale()
 </UL>
@@ -9894,6 +9894,7 @@ Global Symbols
 <LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::~__rw_exception()
 <LI><a href="#[55d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
 <LI><a href="#[455]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, const char*, std::__va_list)
+<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_vector&lang;__rw::__rw_cat*&rang;::~__rw_locale_vector()
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_delete
 <LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_throw_exception_noex(int, char*)
 <LI><a href="#[563]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_vector&lang;__rw::__rw_facet_base*&rang;::~__rw_locale_vector()
@@ -9901,7 +9902,6 @@ Global Symbols
 <LI><a href="#[562]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_imp::~__rw_locale_imp()
 <LI><a href="#[16c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::~ctype()
 <LI><a href="#[566]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::~__rw_use_c_lib_locale()
-<LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_vector&lang;__rw::__rw_cat*&rang;::~__rw_locale_vector()
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> cxa_vec_new.o(i.__cxa_vec_new)
 </UL>
@@ -9940,12 +9940,12 @@ Global Symbols
 <LI><a href="#[5ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype&lang;char&rang;::ctype(const std::ctype_base::mask*, bool, unsigned)
 <LI><a href="#[55d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
 <LI><a href="#[455]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, const char*, std::__va_list)
+<LI><a href="#[5fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_array_new_general
+<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 <LI><a href="#[5e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_vector&lang;__rw::__rw_facet_base*&rang;::resize(unsigned, __rw::__rw_facet_base*const &)
 <LI><a href="#[55f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned)
 <LI><a href="#[565]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rw::__rw_use_c_lib_locale::__rw_use_c_lib_locale(const char*, int)
 <LI><a href="#[5ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::ctype_byname&lang;char&rang;::_C_get_mask_table(const char*)
-<LI><a href="#[5fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_array_new_general
-<LI><a href="#[181]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__sti___10_rwcats_cpp_64e8068e
 </UL>
 
 <P><STRONG><a name="[2ad]"></a>operator new(unsigned)</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, new.o(i._Znwj))
@@ -9990,9 +9990,9 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = __ARM_array_new_general &rArr; std::terminate() &rArr; __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
 <BR>[Calls]<UL><LI><a href="#[456]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;operator new[] (unsigned)
-<LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
 <LI><a href="#[5fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_vec_cleanup
 <LI><a href="#[5fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_rethrow
+<LI><a href="#[210]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::terminate()
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__cxa_vec_new
 </UL>
@@ -10000,10 +10000,10 @@ Global Symbols
 <P><STRONG><a name="[1f2]"></a>__ARM_fpclassify</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, fpclassify.o(i.__ARM_fpclassify))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = __ARM_fpclassify
 </UL>
-<BR>[Called By]<UL><LI><a href="#[1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_hex_real
-<LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
-<LI><a href="#[603]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
+<BR>[Called By]<UL><LI><a href="#[603]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
 <LI><a href="#[60c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
+<LI><a href="#[1f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_hex_real
+<LI><a href="#[1f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_fp_dec_real
 </UL>
 
 <P><STRONG><a name="[613]"></a>__ARM_fpclassifyf</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, fpclassifyf.o(i.__ARM_fpclassifyf))
@@ -10054,10 +10054,10 @@ Global Symbols
 <P><STRONG><a name="[600]"></a>__hardfp___mathlib_tofloat</STRONG> (Thumb, 232 bytes, Stack size 32 bytes, narrow.o(i.__hardfp___mathlib_tofloat))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = __hardfp___mathlib_tofloat &rArr; frexp &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
-<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
+<BR>[Calls]<UL><LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 <LI><a href="#[601]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;frexp
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_narrow
@@ -10066,13 +10066,13 @@ Global Symbols
 <P><STRONG><a name="[603]"></a>__hardfp_atan</STRONG> (Thumb, 622 bytes, Stack size 48 bytes, atan.o(i.__hardfp_atan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = __hardfp_atan &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
+<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[607]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
 <LI><a href="#[1f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
 <LI><a href="#[605]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
@@ -10084,27 +10084,27 @@ Global Symbols
 <P><STRONG><a name="[35e]"></a>__hardfp_atan2</STRONG> (Thumb, 432 bytes, Stack size 48 bytes, atan2.o(i.__hardfp_atan2))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = __hardfp_atan2 &rArr; atan &rArr; __hardfp_atan &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
+<LI><a href="#[609]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
-<LI><a href="#[609]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atan
 <LI><a href="#[608]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan2
 </UL>
 <BR>[Called By]<UL><LI><a href="#[35d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::distanceBetween(double, double, double, double)
 </UL>
 
 <P><STRONG><a name="[26f]"></a>__hardfp_cos</STRONG> (Thumb, 180 bytes, Stack size 32 bytes, cos.o(i.__hardfp_cos))
-<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = __hardfp_cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = __hardfp_cos &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 <LI><a href="#[60c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
 <LI><a href="#[60b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
 <LI><a href="#[60a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
 <LI><a href="#[604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
 <LI><a href="#[60d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPS_Transform
 <LI><a href="#[35d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TinyGPSPlus::distanceBetween(double, double, double, double)
@@ -10121,10 +10121,10 @@ Global Symbols
 <P><STRONG><a name="[60e]"></a>__hardfp_ldexp</STRONG> (Thumb, 200 bytes, Stack size 48 bytes, ldexp.o(i.__hardfp_ldexp))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = __hardfp_ldexp &rArr; __mathlib_dbl_underflow &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<BR>[Calls]<UL><LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
 <LI><a href="#[605]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
 <LI><a href="#[610]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_overflow
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 <LI><a href="#[60f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_scalbn
 </UL>
 <BR>[Called By]<UL><LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__support_ldexp
@@ -10133,33 +10133,33 @@ Global Symbols
 <P><STRONG><a name="[3e6]"></a>__hardfp_log</STRONG> (Thumb, 872 bytes, Stack size 88 bytes, log.o(i.__hardfp_log))
 <BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = __hardfp_log &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
+<LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
 <LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 <LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
-<LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
-<LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
 <LI><a href="#[607]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
 <LI><a href="#[60a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
 <LI><a href="#[604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
 <LI><a href="#[611]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_divzero
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Microsoft_MapPoint::TileSystem::LatLongToPixelXY(double, double, int, int*, int*)
 </UL>
 
 <P><STRONG><a name="[26c]"></a>__hardfp_sin</STRONG> (Thumb, 180 bytes, Stack size 32 bytes, sin.o(i.__hardfp_sin))
-<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 184<LI>Call Chain = __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 <LI><a href="#[60c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_sin
 <LI><a href="#[60b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee754_rem_pio2
 <LI><a href="#[60a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_invalid
 <LI><a href="#[604]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_infnan
 <LI><a href="#[60d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_cos
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLon(double, double)
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLat(double, double)
@@ -10171,12 +10171,12 @@ Global Symbols
 <P><STRONG><a name="[5b4]"></a>__hardfp_sinf</STRONG> (Thumb, 344 bytes, Stack size 16 bytes, sinf.o(i.__hardfp_sinf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = __hardfp_sinf &rArr; __mathlib_rredf2
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[612]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_rredf2
+<BR>[Calls]<UL><LI><a href="#[612]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_rredf2
 <LI><a href="#[614]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_underflow
 <LI><a href="#[615]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_invalid
 <LI><a href="#[616]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_infnan
 <LI><a href="#[613]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassifyf
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LSM6DSM::EnableAWT(short, short)
 </UL>
@@ -10184,8 +10184,8 @@ Global Symbols
 <P><STRONG><a name="[26e]"></a>__hardfp_sqrt</STRONG> (Thumb, 122 bytes, Stack size 32 bytes, sqrt.o(i.__hardfp_sqrt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = __hardfp_sqrt &rArr; _dsqrt &rArr; __fpl_dnaninf
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
-<LI><a href="#[617]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
+<BR>[Calls]<UL><LI><a href="#[617]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
+<LI><a href="#[1ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_errno
 </UL>
 <BR>[Called By]<UL><LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLon(double, double)
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to GPS_Transform_c]::transformLat(double, double)
@@ -10194,17 +10194,17 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[60b]"></a>__ieee754_rem_pio2</STRONG> (Thumb, 938 bytes, Stack size 120 bytes, rred.o(i.__ieee754_rem_pio2))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
+<BR>[Calls]<UL><LI><a href="#[606]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fabs
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ui2d
 <LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[3e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[26f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_cos
@@ -10213,10 +10213,10 @@ Global Symbols
 <P><STRONG><a name="[60d]"></a>__kernel_cos</STRONG> (Thumb, 322 bytes, Stack size 64 bytes, cos_i.o(i.__kernel_cos))
 <BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = __kernel_cos &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[607]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
 </UL>
 <BR>[Called By]<UL><LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
@@ -10226,8 +10226,8 @@ Global Symbols
 <P><STRONG><a name="[607]"></a>__kernel_poly</STRONG> (Thumb, 248 bytes, Stack size 24 bytes, poly.o(i.__kernel_poly))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_log
 <LI><a href="#[603]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atan
@@ -10238,10 +10238,10 @@ Global Symbols
 <P><STRONG><a name="[60c]"></a>__kernel_sin</STRONG> (Thumb, 280 bytes, Stack size 72 bytes, sin_i.o(i.__kernel_sin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = __kernel_sin &rArr; __kernel_poly &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<BR>[Calls]<UL><LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
 <LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
 <LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[607]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__kernel_poly
 <LI><a href="#[1f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_fpclassify
 <LI><a href="#[605]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_dbl_underflow
@@ -15848,11 +15848,11 @@ Global Symbols
 <P><STRONG><a name="[5e2]"></a>__rw::__rw_locale_vector&lang;std::__rw_open_cat_data&rang;::resize(unsigned)</STRONG> (Thumb, 122 bytes, Stack size 40 bytes, messages.o(t._ZN4__rw18__rw_locale_vectorISt18__rw_open_cat_dataE6resizeEj))
 <BR><BR>[Stack]<UL><LI>Max Depth = 304<LI>Call Chain = __rw::__rw_locale_vector&lang;std::__rw_open_cat_data&rang;::resize(unsigned) &rArr; std::__rw_open_cat_data::__rw_open_cat_data() &rArr; std::locale::classic() &rArr; std::locale::locale(__rw::__rw_locale_imp*) &rArr; std::locale::_C_init() &rArr; __rw::__rw_locale_imp::__rw_locale_imp(const char*, unsigned, unsigned) &rArr; __aeabi_vec_new_cookie &rArr; __cxa_vec_new &rArr; __ARM_array_new_general &rArr; std::terminate() &rArr; __cxa_get_globals &rArr; __ARM_exceptions_buffer_init &rArr; malloc &rArr; __Heap_Full &rArr; __Heap_ProvideMemory &rArr; free
 </UL>
-<BR>[Calls]<UL><LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_delete
+<BR>[Calls]<UL><LI><a href="#[560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_new_cookie
+<LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_delete
 <LI><a href="#[5f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_open_cat_data::operator =(const std::__rw_open_cat_data&)
 <LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_open_cat_data::~__rw_open_cat_data()
 <LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_open_cat_data::__rw_open_cat_data()
-<LI><a href="#[560]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_vec_new_cookie
 </UL>
 <BR>[Called By]<UL><LI><a href="#[5e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_messages_base::_C_cat_open(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&, const std::locale&) const
 </UL>
@@ -16912,23 +16912,23 @@ Global Symbols
 <P><STRONG><a name="[852]"></a>__fpl_dnaninf</STRONG> (Thumb, 156 bytes, Stack size 16 bytes, dnaninf.o(x$fpl$dnaninf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __fpl_dnaninf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
-<LI><a href="#[863]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
-<LI><a href="#[853]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
-<LI><a href="#[850]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
-<LI><a href="#[85e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<BR>[Called By]<UL><LI><a href="#[85e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
 <LI><a href="#[85d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dcmple
 <LI><a href="#[85c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfixu
 <LI><a href="#[85b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dfix
 <LI><a href="#[859]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dcmpeq
+<LI><a href="#[858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<LI><a href="#[863]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsub
+<LI><a href="#[853]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
+<LI><a href="#[850]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_d2f
 <LI><a href="#[617]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dsqrt
 </UL>
 
 <P><STRONG><a name="[855]"></a>__fpl_dretinf</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, dretinf.o(x$fpl$dretinf), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
-<LI><a href="#[853]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
-<LI><a href="#[864]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
+<BR><BR>[Called By]<UL><LI><a href="#[864]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_f2d
 <LI><a href="#[85e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dmul
+<LI><a href="#[858]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ddiv
+<LI><a href="#[853]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_dadd
 </UL>
 
 <P><STRONG><a name="[3d8]"></a>__aeabi_cdrcmple</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, drleqf.o(x$fpl$drleqf))
@@ -17162,7 +17162,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> dp_power.o(i._Z14_DP_Power_InitP7Account)
 </UL>
 <P><STRONG><a name="[a0]"></a>[local to DP_SportStatus_cpp]::onEvent(Account*, Account::EventParam_t*)</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, dp_sportstatus.o(i._ZN40_INTERNAL_18_DP_SportStatus_cpp_a5c82bb67onEventEP7AccountPNS0_12EventParam_tE))
-<BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = [local to DP_SportStatus_cpp]::onEvent(Account*, Account::EventParam_t*) &rArr; [local to DP_SportStatus_cpp]::onTimer(Account*) &rArr; HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 360<LI>Call Chain = [local to DP_SportStatus_cpp]::onEvent(Account*, Account::EventParam_t*) &rArr; [local to DP_SportStatus_cpp]::onTimer(Account*) &rArr; HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[4a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to DP_SportStatus_cpp]::onTimer(Account*)
 <LI><a href="#[1df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
@@ -17170,7 +17170,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> dp_sportstatus.o(i._Z20_DP_SportStatus_InitP7Account)
 </UL>
 <P><STRONG><a name="[4a8]"></a>[local to DP_SportStatus_cpp]::onTimer(Account*)</STRONG> (Thumb, 402 bytes, Stack size 104 bytes, dp_sportstatus.o(i._ZN40_INTERNAL_18_DP_SportStatus_cpp_a5c82bb67onTimerEP7Account))
-<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = [local to DP_SportStatus_cpp]::onTimer(Account*) &rArr; HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 352<LI>Call Chain = [local to DP_SportStatus_cpp]::onTimer(Account*) &rArr; HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double) &rArr; TinyGPSPlus::distanceBetween(double, double, double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[3ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Account::Publish()
 <LI><a href="#[3ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Account::Commit(const void*, unsigned)
@@ -17178,12 +17178,12 @@ Local Symbols
 <LI><a href="#[2e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataProc::GetTick()
 <LI><a href="#[4a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataProc::GetTickElaps(unsigned)
 <LI><a href="#[498]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL::GPS_GetDistanceOffset(HAL::GPS_Info_t*, double, double)
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 <LI><a href="#[3d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fabs
 <LI><a href="#[4aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ul2f
 <LI><a href="#[3df]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[3d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[3b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to DP_SportStatus_cpp]::onEvent(Account*, Account::EventParam_t*)
 </UL>
@@ -17725,29 +17725,29 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> resourcepool.o(.init_array)
 </UL>
 <P><STRONG><a name="[268]"></a>[local to GPS_Transform_c]::transformLat(double, double)</STRONG> (Thumb, 620 bytes, Stack size 80 bytes, gps_transform.o(i._ZN37_INTERNAL_15_GPS_Transform_c_49f8fa3d12transformLatEdd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = [local to GPS_Transform_c]::transformLat(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = [local to GPS_Transform_c]::transformLat(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
+<BR>[Calls]<UL><LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPS_Transform
 </UL>
 
 <P><STRONG><a name="[269]"></a>[local to GPS_Transform_c]::transformLon(double, double)</STRONG> (Thumb, 604 bytes, Stack size 80 bytes, gps_transform.o(i._ZN37_INTERNAL_15_GPS_Transform_c_49f8fa3d12transformLonEdd))
-<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dsub
+<BR><BR>[Stack]<UL><LI>Max Depth = 264<LI>Call Chain = [local to GPS_Transform_c]::transformLon(double, double) &rArr; __hardfp_sin &rArr; __ieee754_rem_pio2 &rArr; __aeabi_dmul
 </UL>
-<BR>[Calls]<UL><LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
-<LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
+<BR>[Calls]<UL><LI><a href="#[26e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrt
 <LI><a href="#[26c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sin
 <LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPS_Transform
 </UL>
@@ -20185,16 +20185,16 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[622]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ntoa_long
 <LI><a href="#[621]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ftoa
-<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
-<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
-<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 <LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
 <LI><a href="#[475]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2d
 <LI><a href="#[3e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_ddiv
+<LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dsub
+<LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dadd
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_vsnprintf
 <LI><a href="#[621]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_ftoa
@@ -20205,8 +20205,6 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[624]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_out_rev
 <LI><a href="#[620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_etoa
-<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
-<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 <LI><a href="#[3d8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdrcmple
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[3d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmple
@@ -20215,6 +20213,8 @@ Local Symbols
 <LI><a href="#[623]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2uiz
 <LI><a href="#[3e7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2iz
 <LI><a href="#[602]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_cdcmpeq
+<LI><a href="#[26d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_drsub
+<LI><a href="#[3c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dneg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[67a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_vsnprintf
 <LI><a href="#[620]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_etoa
@@ -21228,8 +21228,8 @@ Local Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cmb_printf
 <LI><a href="#[801]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cm_backtrace_call_stack
-<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[1c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;cm_backtrace_fault
 </UL>
@@ -21338,13 +21338,13 @@ Local Symbols
 <LI>Call Chain = [local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, int, std::__va_list) &rArr; sscanf &rArr; __vfscanf_char &rArr; __vfscanf &rArr; _scanf_real &rArr; _scanf_really_real &rArr; _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
 <BR>[Calls]<UL><LI><a href="#[458]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strrchr
+<LI><a href="#[202]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sscanf
 <LI><a href="#[45b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::locale()
 <LI><a href="#[455]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;[local to rwstdexcept_cpp]::__rw::__rw_vfmatstr(char*, unsigned, const char*, std::__va_list)
 <LI><a href="#[459]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const char*, const std::allocator&lang;char&rang;&)
 <LI><a href="#[d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::locale::~locale()
 <LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::~basic_string()
 <LI><a href="#[45a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;::basic_string(const std::basic_string&lang;char, std::char_traits&lang;char&rang;, std::allocator&lang;char&rang;&rang;&)
-<LI><a href="#[202]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;sscanf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[55d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;std::__rw_exception::_C_vformat(int, std::__va_list)
 </UL>
@@ -21372,10 +21372,10 @@ Local Symbols
 <P><STRONG><a name="[217]"></a>_fp_value</STRONG> (Thumb, 588 bytes, Stack size 96 bytes, scanf_fp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 220<LI>Call Chain = _fp_value &rArr; _btod_etento &rArr; _btod_emul &rArr; _e2e
 </UL>
-<BR>[Calls]<UL><LI><a href="#[1d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
-<LI><a href="#[218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emuld
+<BR>[Calls]<UL><LI><a href="#[218]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_emuld
 <LI><a href="#[219]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_edivd
 <LI><a href="#[1ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_btod_etento
+<LI><a href="#[1d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 <LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ieee_status
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_scanf_really_real
@@ -21407,9 +21407,9 @@ Local Symbols
 <P><STRONG><a name="[231]"></a>_set_locale_byname</STRONG> (Thumb, 152 bytes, Stack size 24 bytes, locale_r.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = _set_locale_byname &rArr; _locale_name
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_ctype
-<LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale
+<BR>[Calls]<UL><LI><a href="#[1ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_locale
 <LI><a href="#[1b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_numeric
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_get_lc_ctype
 <LI><a href="#[230]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_locale_name
 </UL>
 <BR>[Called By]<UL><LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_setlocale_r
