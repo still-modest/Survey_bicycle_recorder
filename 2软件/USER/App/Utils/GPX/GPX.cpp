@@ -30,9 +30,13 @@
  */
 
 #include "GPX.h"
-
+//
+#define _GPX_INFO_HEAD          "<info 姓名=\"张三\" 工号=\"123456789\" >\n"
+#define _GPX_INFO_TALL          "</info>\n"
+//
 #define _GPX_HEAD "<gpx version=\"1.1\" creator=\"Arduino GPX Lib\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n xmlns=\"http://www.topografix.com/GPX/1/1\"\n xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"\n>\n"
 #define _GPX_TAIL               "</gpx>\n"
+
 #define _GPX_META_HEAD          "<metadata>"
 #define _GPX_META_TAIL          "</metadata>\n"
 #define _GPX_TRAK_HEAD          "<trk>"
@@ -72,6 +76,17 @@ String GPX::getClose()
     return String(_GPX_TAIL);
 }
 
+//
+String GPX::getInfo_Open()
+{
+		return String(_GPX_INFO_HEAD);
+}
+
+String GPX::getInfo_Close()
+{
+		return String(_GPX_INFO_TALL);
+}
+//
 String GPX::getMetaData()
 {
     String localStr(_GPX_META_HEAD);

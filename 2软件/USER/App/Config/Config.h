@@ -44,7 +44,7 @@
 #define CONFIG_GPS_LATITUDE_DEFAULT           39.907415f
 
 #define CONFIG_TRACK_FILTER_OFFSET_THRESHOLD  2 // pixel
-#define CONFIG_TRACK_RECORD_FILE_DIR_NAME     "zhangsan"
+#define CONFIG_TRACK_RECORD_FILE_DIR_NAME     "san"
 
 #define CONFIG_MAP_USE_WGS84_DEFAULT          false
 #define CONFIG_MAP_DIR_PATH_DEFAULT           "/MAP"
