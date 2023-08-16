@@ -78,9 +78,11 @@ void HAL::HAL_Init()
     Timer_SetInterrupt(CONFIG_HAL_UPDATE_TIM, 10 * 1000, HAL_InterrputUpdate);
 		
     TIM_Cmd(CONFIG_HAL_UPDATE_TIM, ENABLE);
-		//霍尔开关定时器配置
-		Timer_SetInterrupt(CONFIG_HALL_SWITCH_TIM, 1000 * 1000, HALL_SWITCH_InterrputUpdate);
 		
+		//霍尔开关定时器配置
+		HALL_Timer_SetInterrupt(CONFIG_HALL_SWITCH_TIM, 1000 * 1000, HALL_SWITCH_InterrputUpdate);
+		
+		TIM_Cmd(CONFIG_HALL_SWITCH_TIM, ENABLE);
 }
 
 #if CONFIG_SENSOR_ENABLE

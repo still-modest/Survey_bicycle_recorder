@@ -12,6 +12,7 @@ double Circle_speed = 0;			//速度 	单位为m/s
 //霍尔开关外部中断服务函数
 static void Hall_EventHandler()
 {
+	TIM_Cmd(CONFIG_HALL_SWITCH_TIM, DISABLE);
 	//获取时间	
 		Short_time = TMR_GetCounter(TIM3);
 		Short_time = Short_time*0.0001;
@@ -28,8 +29,7 @@ static void Hall_EventHandler()
 	
 		Short_time =0;
 		Hall_second=0;
-		TIM_Cmd(CONFIG_HALL_SWITCH_TIM, DISABLE);
-	
+		
 		//开启另一次计数
 		TIM_Cmd(CONFIG_HALL_SWITCH_TIM, ENABLE);
 }
@@ -38,7 +38,7 @@ void HAL::Hall_switch_Init()
 {
 	pinMode(CONFIG_HALL_SWITCH_PIN, INPUT_PULLDOWN);
 	
-	attachInterrupt(CONFIG_HALL_SWITCH_PIN, Hall_EventHandler , CHANGE);
+	HALL_attachInterrupt(CONFIG_HALL_SWITCH_PIN, Hall_EventHandler , CHANGE);
 	
 }
 
