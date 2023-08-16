@@ -48,8 +48,14 @@ public:
     GPX();
     String getOpen();
     String getClose();
+
 		String getInfo_Open();
 		String getInfo_Close();
+		String getType_Open();
+		String getType_Close();
+		String getPause();
+		String getContinue();
+
     String getMetaData();
     String getTrakOpen();
     String getTrakClose();

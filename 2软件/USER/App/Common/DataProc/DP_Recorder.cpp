@@ -122,6 +122,36 @@ static void Recorder_RecStart(Recorder_t* recorder, uint16_t time)
     }
 }
 
+/*添加暂停储存信息*/
+static void Recorder_Pause(Recorder_t* recorder)
+{
+		recorder->active = false;
+		GPX* gpx = &(recorder->gpx);
+		lv_fs_file_t* file_p = &(recorder->file);
+	
+		Recorder_FileWriteString(file_p,gpx->getType_Open().c_str());
+		Recorder_FileWriteString(file_p,gpx->getPause().c_str());
+		Recorder_FileWriteString(file_p,gpx->getType_Close().c_str());
+	
+		LV_LOG_USER("Track record pause");
+	
+}
+
+/*添加继续储存信息*/
+static void Recorder_Continue(Recorder_t* recorder)
+{
+		
+		GPX* gpx = &(recorder->gpx);
+		lv_fs_file_t* file_p = &(recorder->file);
+	
+		Recorder_FileWriteString(file_p,gpx->getType_Open().c_str());
+		Recorder_FileWriteString(file_p,gpx->getContinue().c_str());
+		Recorder_FileWriteString(file_p,gpx->getType_Close().c_str());
+		
+		LV_LOG_USER("Track record continue");
+    recorder->active = true;
+}
+
 static void Recorder_RecStop(Recorder_t* recorder)
 {
     recorder->active = false;
@@ -146,12 +176,10 @@ static int onNotify(Recorder_t* recorder, Recorder_Info_t* info)
         Recorder_RecStart(recorder, info->time);
         break;
     case RECORDER_CMD_PAUSE:
-        recorder->active = false;
-        LV_LOG_USER("Track record pause");
+        Recorder_Pause(recorder);
         break;
     case RECORDER_CMD_CONTINUE:
-        LV_LOG_USER("Track record continue");
-        recorder->active = true;
+        Recorder_Continue(recorder);
         break;
     case RECORDER_CMD_STOP:
         Recorder_RecStop(recorder);
