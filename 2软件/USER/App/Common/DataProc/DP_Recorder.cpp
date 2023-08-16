@@ -7,7 +7,7 @@
 using namespace DataProc;
 
 #define RECORDER_GPX_TIME_FMT    "%d-%02d-%02dT%02d:%02d:%02dZ"
-#define RECORDER_GPX_FILE_NAME   "/" CONFIG_TRACK_RECORD_FILE_DIR_NAME "/zhangsan_%d%02d%02d_%02d%02d%02d.gpx"
+#define RECORDER_GPX_FILE_NAME   "/" CONFIG_TRACK_RECORD_FILE_DIR_NAME "/zhangsan123_%d%02d%02d_%02d%02d%02d.txt"
 #define RECORDER_GPX_META_NAME   VERSION_FIRMWARE_NAME " " VERSION_SOFTWARE
 #define RECORDER_GPX_META_DESC   VERSION_PROJECT_LINK
 
@@ -107,6 +107,8 @@ static void Recorder_RecStart(Recorder_t* recorder, uint16_t time)
         gpx->setDesc("");
 
         Recorder_FileWriteString(file_p, gpx->getOpen().c_str());
+				Recorder_FileWriteString(file_p, gpx->getInfo_Open().c_str());
+				Recorder_FileWriteString(file_p, gpx->getInfo_Close().c_str());
         Recorder_FileWriteString(file_p, gpx->getMetaData().c_str());
         Recorder_FileWriteString(file_p, gpx->getTrakOpen().c_str());
         Recorder_FileWriteString(file_p, gpx->getInfo().c_str());
