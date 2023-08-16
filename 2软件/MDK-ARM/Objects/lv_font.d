@@ -1,0 +1,14 @@
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\lv_font.c
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\lv_font.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../lv_conf_internal.h
+.\objects\lv_font.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../lv_conf_kconfig.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../../../lv_conf.h
+.\objects\lv_font.o: E:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+.\objects\lv_font.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\lv_symbol_def.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../misc/lv_area.h
+.\objects\lv_font.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../misc/lv_utils.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../misc/lv_log.h
+.\objects\lv_font.o: ..\Simulator\LVGL.Simulator\lvgl\src\font\../misc/lv_assert.h

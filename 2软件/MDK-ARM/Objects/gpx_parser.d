@@ -1,0 +1,15 @@
+.\objects\gpx_parser.o: ..\USER\App\Utils\GPX_Parser\GPX_Parser.cpp
+.\objects\gpx_parser.o: ..\USER\App\Utils\GPX_Parser\GPX_Parser.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\Stream.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\inttypes.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\Print.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\libmaple_types.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\WString.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\dtostrf.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
+.\objects\gpx_parser.o: E:\keil5\ARM\ARMCC\Bin\..\include\ctype.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\itoa.h
+.\objects\gpx_parser.o: ..\ArduinoAPI\Printable.h
