@@ -1,11 +1,23 @@
 #include "HAL.h"
+#include "timer.h"
 #include "App/Version.h"
+
+uint32_t Hall_second=0;
 
 static void HAL_InterrputUpdate()
 {
     HAL::Power_Update();
     HAL::Encoder_Update();
     HAL::Audio_Update();
+}
+//霍尔开关
+static void HALL_SWITCH_InterrputUpdate()
+{
+	//时间秒数加一
+	Hall_second= Hall_second+1;
+	
+	//清除LINE3上的中断标志位 
+	TMR_ClearFlag(CONFIG_HALL_SWITCH_TIM, TMR_FLAG_Update);
 }
 
 #if CONFIG_SENSOR_ENABLE
@@ -50,7 +62,11 @@ void HAL::HAL_Init()
     Display_Init();
 
     Timer_SetInterrupt(CONFIG_HAL_UPDATE_TIM, 10 * 1000, HAL_InterrputUpdate);
+		
     TIM_Cmd(CONFIG_HAL_UPDATE_TIM, ENABLE);
+		//霍尔开关配置
+		Timer_SetInterrupt(CONFIG_HALL_SWITCH_TIM, 1000 * 1000, HALL_SWITCH_InterrputUpdate);
+		
 }
 
 #if CONFIG_SENSOR_ENABLE

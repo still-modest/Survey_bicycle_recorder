@@ -337,7 +337,7 @@
               <MiscControls>--gnu</MiscControls>
               <Define>LIBRARY_VERSION,ARDUINO=111</Define>
               <Undefine></Undefine>
-              <IncludePath>..\ArduinoAPI;..\Core;..\Libraries;..\USER;..\Libraries\SdFat\src;..\Simulator\LVGL.Simulator;..\USER\App</IncludePath>
+              <IncludePath>..\ArduinoAPI;..\Core;..\Libraries;..\USER;..\Libraries\SdFat\src;..\Simulator\LVGL.Simulator;..\USER\App;..\USER\HAL;..\ArduinoAPI</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2834,6 +2834,11 @@
               <FileName>rt_sys.cpp</FileName>
               <FileType>8</FileType>
               <FilePath>..\USER\HAL\rt_sys.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>HAL_Hall.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>..\USER\HAL\HAL_Hall.cpp</FilePath>
             </File>
           </Files>
         </Group>

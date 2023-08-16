@@ -121,6 +121,10 @@ bool Audio_PlayMusic(const char* name);
 /* Memory */
 void Memory_DumpInfo();
 
+
+/*Hall_swith*/
+void Hall_switch_Init();
+
 }
 
 #endif
