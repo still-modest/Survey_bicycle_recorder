@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+    <script src="qwebchannel.js"></script>      <!--引入该QWebChannel文件-->
+    <title>百度地图API自定义地图</title>
+    <!--引用百度地图API-->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=xPInW7nxR0AhPTVeCYqP9aoSnNDHlngb"></script>
+  </head>
+
+  <body>
+  <style type="text/css">
+      html,body{height:100%;width:100%;margin:0px;padding:0px;overflow:hidden}
+  </style>
+  <!--百度地图容器-->
+  <!--border:#ccc solid 1px;指边框固化1px宽度，#ccc色（浅灰）-->
+  <div style="width:100%;height:100%;font-size:12px" id="map"></div>
+  </body>
+  <script type="text/javascript">
+
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+      new QWebChannel(qt.webChannelTransport, function(channel){Qtbridge = channel.objects.JSbridge;Qtbridge.showSegment_finish();}); //添加交互控件
+    }
+    function createMap(){
+      map = new BMap.Map("map");
+      map.setMapType(BMAP_SATELLITE_MAP);
+      map.centerAndZoom(new BMap.Point(113.466718,23.05495),15);   //设置中心点和级别
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});  //比例尺
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:0});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});  //地图缩略图
+      map.addControl(overviewControl);
+      var mapTypeControl = new BMap.MapTypeControl({mapTypes:[BMAP_NORMAL_MAP,BMAP_SATELLITE_MAP,BMAP_HYBRID_MAP]});
+      map.addControl(mapTypeControl);          //添加地图类型控件
+    }
+
+    var map;
+    var Qtbridge;
+      initMap();
+      Polyline_Arr = {
+        key:Array(),
+        poly:Array(),
+        marker_start:Array(),
+        marker_end:Array(),
+        info_W:Array()
+      };
+
+    //我添加的内容
+    function setInfoW(index, Info)
+    {
+        var opts = {
+            width:0,
+            height:0,
+            title: "轨迹的段信息"
+        };
+        infoWindow = new BMap.InfoWindow(Info,opts);
+        Polyline_Arr.info_W[index] = infoWindow;
+        Polyline_Arr.poly[index].addEventListener("click",function(e){
+            var point = new BMap.Point(e.point.lng,e.point.lat);
+            map.openInfoWindow(Polyline_Arr.info_W[index],point);
+        });
+    }
+    function showSegment(points_lng_json,points_lat_json,index)
+    {
+    Qtbridge.dmsg("开始");
+        var points_lng = points_lng_json.substring(1,points_lng_json.length-1);
+        var points_lat = points_lat_json.substring(1,points_lat_json.length-1);
+        points_lng = points_lng.split(",");
+        points_lat = points_lat.split(",");
+
+        var points = [];
+        var pointsArray = []; //二维数组，每个维度存放最多10个点
+        posIndex = 0; //第一维度下标
+        points_BD09 = [];
+
+        var convertor = new BMap.Convertor();
+
+        polyline = new BMap.Polyline([],{strokeColor:"red",strokeWeight:6,/*icons:[icon],*/strokeOpacity:0.8});
+        map.addOverlay(polyline);
+        Polyline_Arr.key.push(index);
+        Polyline_Arr.poly.push(polyline);
+
+
+        for(var i = 0; i < points_lng.length; ++i)
+        {
+            points.push(new BMap.Point(points_lng[i],points_lat[i]));
+        }
+        for(var i = 0; i < points.length; i+=10)
+            pointsArray.push(points.slice(i,i+10));
+
+translateCallback = function(data)
+{
+    if(data.status == 0)
+    {
+        var msg = "points_BD09的坐标数量为" + points_BD09.length+"，data.points的坐标数量为：" + data.points.length;
+        Qtbridge.dmsg(msg);
+        for(var k = 0; k <data.points.length;++k)
+        {
+            points_BD09.push(data.points[k]);
+        }
+        polyline.setPath(points_BD09);
+        map.centerAndZoom(points_BD09[points_BD09.length-1], 17);
+        if(!posIndex)
+        {
+            var myIcon = new BMap.Icon("https://webmap0.bdimg.com/wolfman/static/common/images/markers_new2x_2960fb4.png",new BMap.Size(32,51),{imageOffset:new BMap.Size(-250,-174)});
+            myIcon.setImageSize(new BMap.Size(376,376));
+            var marker = new BMap.Marker(data.points[0],{icon:myIcon,offset:new BMap.Size(0,-20)});
+//            var marker = new BMap.Marker(data.points[0]);
+            var label = new BMap.Label(index);
+            label.setStyle({width:"20px",height:"20px",borderRadius:"50%",borderColor:"#62b500",textAlign:"center",lineHeight:"20px"});
+            label.setOffset(new BMap.Size(4,4));
+            marker.setLabel(label);
+            map.addOverlay(marker);
+            Polyline_Arr.marker_start.push(marker);
+        }
+        posIndex++;
+        if(posIndex < pointsArray.length)
+            convertor.translate(pointsArray[posIndex],1,5,translateCallback);
+        else
+        {
+
+            var myIcon = new BMap.Icon("https://webmap0.bdimg.com/wolfman/static/common/images/markers_new2x_2960fb4.png",new BMap.Size(32,51),{imageOffset:new BMap.Size(-282,-174)});
+            myIcon.setImageSize(new BMap.Size(376,376));
+            var marker = new BMap.Marker(data.points[data.points.length-1],{icon:myIcon,offset:new BMap.Size(0,-20)});
+            map.addOverlay(marker);
+            Polyline_Arr.marker_end.push(marker);
+
+            Qtbridge.showSegment_finish();
+            Qtbridge.dmsg("结束");
+        }
+
+    }else
+    {
+        Qtbridge.dmsg("坐标转换出错");
+        Qtbridge.showSegment_finish();
+    }
+}
+
+        convertor.translate(pointsArray[posIndex],1,5,translateCallback);
+
+    }
+    function setPloylineRed(index)
+    {
+        for(let i in Polyline_Arr.key)
+        {
+            if(Polyline_Arr.key[i] == index)
+            {
+                Polyline_Arr.poly[i].setStrokeColor("red");
+                break;
+            }
+        }
+    }
+    function setPloylineGreen(index)
+    {
+        for(let i in Polyline_Arr.key)
+        {
+            if(Polyline_Arr.key[i] == index)
+            {
+                Polyline_Arr.poly[i].setStrokeColor("green");
+                break;
+            }
+        }
+    }
+    function removePloyline(index)
+    {
+        for(let i in Polyline_Arr.key)
+        {
+            if(Polyline_Arr.key[i] == index)
+            {
+                map.removeOverlay(Polyline_Arr.poly[i]);
+                map.removeOverlay(Polyline_Arr.marker_start[i]);
+                map.removeOverlay(Polyline_Arr.marker_end[i]);
+                break;
+            }
+        }
+    }
+    //
+    /***
+    *坐标常量说明：
+    *COORDINATES_WGS84= 1， WGS84坐标
+    *COORDINATES_BD09= 5，百度bd09坐标
+    */
+  </script>
+</html>
