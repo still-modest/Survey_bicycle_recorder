@@ -31,7 +31,7 @@
 
 #include "GPX.h"
 //
-#define _GPX_INFO_HEAD          "<info 姓名=\"张三\" 工号=\"123456789\" >\n"
+#define _GPX_INFO_HEAD          "<info 濮撳悕=\"寮犱笁\" 宸ュ彿=\"123456789\" >\n"
 #define _GPX_INFO_TALL          "</info>\n"
 //
 #define _GPX_HEAD "<gpx version=\"1.1\" creator=\"Arduino GPX Lib\"\n xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\n xmlns=\"http://www.topografix.com/GPX/1/1\"\n xsi:schemaLocation=\"http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd\"\n>\n"
