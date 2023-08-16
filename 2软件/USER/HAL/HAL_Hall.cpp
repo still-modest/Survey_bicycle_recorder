@@ -1,6 +1,7 @@
 #include "HAL.h"
 #include "exti.h"
 #include "timer.h"
+#include "Arduino.h"
 
 double Hall_time=0;		//霍尔开关总时间	单位为s
 double Short_time=0;	//霍尔开关细微时间	单位为s
@@ -41,4 +42,20 @@ void HAL::Hall_switch_Init()
 	
 }
 
+//LED0初始化
+void HAL::LED_Init()
+{
+	pinMode(CONFIG_LED_PIN,OUTPUT);
+}
 
+//LED0打开
+void HAL::LED_Open()
+{
+	digitalWrite(CONFIG_LED_PIN,0);
+}
+
+//LED0关闭
+void HAL::LED_Close()
+{
+	digitalWrite(CONFIG_LED_PIN,1);
+}

@@ -1,5 +1,5 @@
 Dependencies for Project 'proj', Target 'X-Track': (DO NOT MODIFY !)
-F (..\USER\main.cpp)(0x61888A38)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+F (..\USER\main.cpp)(0x61B5E3E5)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (E:\keil5\ARM\ARMCC\include\stdbool.h)(0x599ECD2E)
@@ -64,9 +64,9 @@ I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
 I (..\USER\App/App.h)(0x6157DFC9)
 I (..\USER\HAL/HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
-I (..\USER\HAL/HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL/HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL/CommonMacro.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/lvgl.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/misc/lv_log.h)(0x6157DFC9)
@@ -472,7 +472,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Common\DataProc\DP_LIST.inc)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)()
@@ -615,7 +615,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_GPS.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_gps.o --omf_browse .\objects\dp_gps.crf --depend .\objects\dp_gps.d)
 I (..\USER\App\Common\DataProc\DataProc.h)(0x6157DFC9)
@@ -756,7 +756,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Config/Config.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_Power.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_power.o --omf_browse .\objects\dp_power.crf --depend .\objects\dp_power.d)
@@ -908,7 +908,7 @@ I (E:\keil5\ARM\ARMCC\include\cstdlib)(0x599ECD2A)
 I (E:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (..\USER\App\Utils/Filters/MedianQueueFilter.h)(0x6157DFC9)
 I (..\USER\App\Utils/Filters/SlidingFilter.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 I (E:\keil5\ARM\ARMCC\include\algorithm.CC)(0x564D4E5E)
 I (E:\keil5\ARM\ARMCC\include\rw\_random.h)(0x564D4E5E)
@@ -1061,7 +1061,7 @@ I (E:\keil5\ARM\ARMCC\include\cstdlib)(0x599ECD2A)
 I (E:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
 I (..\USER\App\Utils/Filters/MedianQueueFilter.h)(0x6157DFC9)
 I (..\USER\App\Utils/Filters/SlidingFilter.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Config/Config.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_Recorder.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_recorder.o --omf_browse .\objects\dp_recorder.crf --depend .\objects\dp_recorder.d)
@@ -1425,7 +1425,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_MAG.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_mag.o --omf_browse .\objects\dp_mag.crf --depend .\objects\dp_mag.d)
 I (..\USER\App\Common\DataProc\DataProc.h)(0x6157DFC9)
@@ -1566,7 +1566,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_Storage.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_storage.o --omf_browse .\objects\dp_storage.crf --depend .\objects\dp_storage.d)
 I (..\USER\App\Common\DataProc\DataProc.h)(0x6157DFC9)
@@ -1707,7 +1707,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Utils/StorageService/StorageService.h)(0x6157DFC9)
 I (..\USER\App\Utils/MapConv/MapConv.h)(0x6157DFC9)
 I (..\USER\App\Utils/MapConv/TileSystem/TileSystem.h)(0x6157DFC9)
@@ -1853,7 +1853,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_TzConv.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_tzconv.o --omf_browse .\objects\dp_tzconv.crf --depend .\objects\dp_tzconv.d)
 I (..\USER\App\Common\DataProc\DataProc.h)(0x6157DFC9)
@@ -1994,7 +1994,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Utils/Time/Time.h)(0x6157DFC9)
 I (..\USER\App\Utils/Time/TimeLib.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\inttypes.h)(0x599ECD2E)
@@ -2139,7 +2139,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common\DataProc\DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common\DataProc\../HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App\Config/Config.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Common\DataProc\DP_TrackFilter.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\dp_trackfilter.o --omf_browse .\objects\dp_trackfilter.crf --depend .\objects\dp_trackfilter.d)
@@ -2462,7 +2462,7 @@ I (..\USER\App\Pages\SystemInfos/SystemInfosModel.h)(0x6157DFC9)
 I (..\USER\App\Pages\Startup/Startup.h)(0x6157DFC9)
 I (..\USER\App\Pages\Startup/StartupView.h)(0x6157DFC9)
 I (..\USER\App\Pages\Startup/StartupModel.h)(0x6157DFC9)
-I (..\USER\App\Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 I (E:\keil5\ARM\ARMCC\include\deque.CC)(0x564D4E5E)
 F (..\USER\App\Pages\AppFactory.h)(0x6157DFC9)()
@@ -2773,7 +2773,7 @@ I (..\USER\App\Utils/DataCenter/Account.h)(0x6157DFC9)
 I (..\USER\App\Utils/DataCenter/PingPongBuffer/PingPongBuffer.h)(0x6157DFC9)
 I (..\USER\App\Common/DataProc/../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common/DataProc/DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 I (E:\keil5\ARM\ARMCC\include\deque.CC)(0x564D4E5E)
 F (..\USER\App\Pages\Startup\Startup.h)(0x6157DFC9)()
@@ -2917,7 +2917,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\App\Common/DataProc/../HAL/HAL_Def.h)(0x6157DFC9)
 I (..\USER\App\Common/DataProc/DataProc_Def.h)(0x6157DFC9)
-I (..\USER\App\Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App\Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\vector.CC)(0x564D4E5C)
 F (..\USER\App\Pages\Startup\StartupModel.h)(0x6157DFC9)()
 F (..\USER\App\Pages\Startup\StartupView.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\startupview.o --omf_browse .\objects\startupview.crf --depend .\objects\startupview.d)
@@ -10357,11 +10357,11 @@ I (E:\keil5\ARM\ARMCC\include\string.h)(0x599ECD2C)
 I (E:\keil5\ARM\ARMCC\include\cmath)(0x599ECD2C)
 I (E:\keil5\ARM\ARMCC\include\math.h)(0x599ECD2E)
 F (..\USER\App\Utils\TrackFilter\TrackPointFilter.h)(0x6157DFC9)()
-F (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)()
+F (..\USER\HAL\HAL_Config.h)(0x61B5BC06)()
 F (..\USER\HAL\HAL.h)(0x6157DFC9)()
-F (..\USER\HAL\HAL.cpp)(0x61B2BA21)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal.o --omf_browse .\objects\hal.crf --depend .\objects\hal.d)
+F (..\USER\HAL\HAL.cpp)(0x61B5E3C2)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal.o --omf_browse .\objects\hal.crf --depend .\objects\hal.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -10425,7 +10425,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\USER\App/Version.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/lvgl.h)(0x6157DFC9)
@@ -10556,7 +10556,7 @@ I (..\Libraries\SdFat\src\FatLib/StdioStream.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\SdCard/SdioCard.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Audio.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_audio.o --omf_browse .\objects\hal_audio.crf --depend .\objects\hal_audio.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -10620,14 +10620,14 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\USER\App/Utils/TonePlayer/TonePlayer.h)(0x6157DFC9)
 I (..\USER\App/Common/Music/MusicCode.h)(0x6157DFC9)
 I (..\USER\App/Common/Music/ToneMap.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Clock.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_clock.o --omf_browse .\objects\hal_clock.crf --depend .\objects\hal_clock.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -10691,12 +10691,12 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Core\rtc.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Backlight.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_backlight.o --omf_browse .\objects\hal_backlight.crf --depend .\objects\hal_backlight.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -10760,7 +10760,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/lvgl.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/misc/lv_log.h)(0x6157DFC9)
@@ -10867,9 +10867,9 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/themes/mono/lv_theme_mono.h)(0x615
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/themes/basic/lv_theme_basic.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
-F (..\USER\HAL\HAL_Buzz.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_buzz.o --omf_browse .\objects\hal_buzz.crf --depend .\objects\hal_buzz.d)
+F (..\USER\HAL\HAL_Buzz.cpp)(0x61B5BC85)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_buzz.o --omf_browse .\objects\hal_buzz.crf --depend .\objects\hal_buzz.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -10933,11 +10933,11 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Display.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_display.o --omf_browse .\objects\hal_display.crf --depend .\objects\hal_display.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11001,7 +11001,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\Adafruit_ST7789/Adafruit_ST7789.h)(0x6157DFC9)
 I (..\Libraries\Adafruit_GFX_Library/Adafruit_GFX.h)(0x6157DFC9)
@@ -11009,7 +11009,7 @@ I (..\Libraries\Adafruit_GFX_Library/gfxfont.h)(0x6157DFC9)
 I (..\Libraries\Adafruit_GFX_Library/Fonts/FreeMono12pt7b.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Encoder.cpp)(0x619612EB)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_encoder.o --omf_browse .\objects\hal_encoder.crf --depend .\objects\hal_encoder.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11073,13 +11073,13 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\ButtonEvent/ButtonEvent.h)(0x6187D448)
 I (..\Libraries\ButtonEvent/EventType.inc)(0x6157DFC9)
 F (..\USER\HAL\HAL_FaultHandle.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_faulthandle.o --omf_browse .\objects\hal_faulthandle.crf --depend .\objects\hal_faulthandle.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11143,7 +11143,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\USER\App/Version.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/lvgl.h)(0x6157DFC9)
@@ -11277,7 +11277,7 @@ I (..\Libraries\cm_backtrace/cmb_def.h)(0x6157DFC9)
 I (..\Libraries\cm_backtrace/cmb_cfg.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_GPS.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_gps.o --omf_browse .\objects\hal_gps.crf --depend .\objects\hal_gps.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11341,13 +11341,13 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\TinyGPSPlus/src/TinyGPS++.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\limits.h)(0x599ECD2A)
 F (..\USER\HAL\HAL_I2C_Scan.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_i2c_scan.o --omf_browse .\objects\hal_i2c_scan.crf --depend .\objects\hal_i2c_scan.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11411,13 +11411,13 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\ArduinoAPI\Wire.h)(0x6157DFC9)
 I (..\ArduinoAPI\WireBase.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_IMU.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_imu.o --omf_browse .\objects\hal_imu.crf --depend .\objects\hal_imu.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11481,12 +11481,12 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\LSM6DSM/LSM6DSM.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_MAG.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_mag.o --omf_browse .\objects\hal_mag.crf --depend .\objects\hal_mag.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11550,12 +11550,12 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\LIS3MDL/LIS3MDL.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_Memory.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_memory.o --omf_browse .\objects\hal_memory.crf --depend .\objects\hal_memory.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11619,13 +11619,13 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\Libraries\StackInfo/StackInfo.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\stdarg.h)(0x599ECD2A)
 F (..\USER\HAL\HAL_Power.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_power.o --omf_browse .\objects\hal_power.crf --depend .\objects\hal_power.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11689,11 +11689,11 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 F (..\USER\HAL\HAL_SD_CARD.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_sd_card.o --omf_browse .\objects\hal_sd_card.crf --depend .\objects\hal_sd_card.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11757,7 +11757,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 I (..\USER\App\Config/Config.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\SdFat.h)(0x6157DFC9)
@@ -11869,9 +11869,9 @@ I (..\Libraries\SdFat\src\FatLib/FatVolume.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\FatLib/FatFileSystem.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\FatLib/StdioStream.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\SdCard/SdioCard.h)(0x6157DFC9)
-F (..\USER\HAL\HAL_Hall.cpp)(0x61B2BA93)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_hall.o --omf_browse .\objects\hal_hall.crf --depend .\objects\hal_hall.d)
+F (..\USER\HAL\HAL_Hall.cpp)(0x61B5E3D9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu --cpp11-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\hal_hall.o --omf_browse .\objects\hal_hall.crf --depend .\objects\hal_hall.d)
 I (..\USER\HAL\HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (E:\keil5\ARM\ARMCC\include\stdint.h)(0x599ECD2E)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
@@ -11935,7 +11935,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL\HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL\HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL\CommonMacro.h)(0x6157DFC9)
 F (..\Simulator\LVGL.Simulator\lv_conf.h)(0x6157DFC9)()
 F (..\Simulator\LVGL.Simulator\lvgl\src\core\lv_disp.c)(0x6157DFC9)(--c99 -c --cpu Cortex-M4.fp -g -W -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\lv_disp.o --omf_browse .\objects\lv_disp.crf --depend .\objects\lv_disp.d)
@@ -20175,9 +20175,9 @@ I (..\Libraries\SdFat\src\FatLib/FatFileSystem.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\FatLib/StdioStream.h)(0x6157DFC9)
 I (..\Libraries\SdFat\src\SdCard/SdioCard.h)(0x6157DFC9)
 I (..\USER\HAL/HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
-I (..\USER\HAL/HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL/HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL/CommonMacro.h)(0x6157DFC9)
 F (..\USER\lv_port\lv_port_disp.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\lv_port_disp.o --omf_browse .\objects\lv_port_disp.crf --depend .\objects\lv_port_disp.d)
 I (..\USER\lv_port\lv_port.h)(0x6157DFC9)
@@ -20290,7 +20290,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/themes/basic/lv_theme_basic.h)(0x6
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\HAL/HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
@@ -20351,7 +20351,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL/HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL/HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL/CommonMacro.h)(0x6157DFC9)
 F (..\USER\lv_port\lv_port_indev.cpp)(0x61960E6E)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\lv_port_indev.o --omf_browse .\objects\lv_port_indev.crf --depend .\objects\lv_port_indev.d)
 I (..\USER\lv_port\lv_port.h)(0x6157DFC9)
@@ -20464,7 +20464,7 @@ I (..\Simulator\LVGL.Simulator\lvgl/src/extra/themes/basic/lv_theme_basic.h)(0x6
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/lv_others.h)(0x6157DFC9)
 I (..\Simulator\LVGL.Simulator\lvgl/src/extra/others/snapshot/lv_snapshot.h)(0x6157DFC9)
 I (..\USER\HAL/HAL.h)(0x6157DFC9)
-I (..\USER\App/Common/HAL/HAL.h)(0x61B1C9BD)
+I (..\USER\App/Common/HAL/HAL.h)(0x61B5C02A)
 I (..\USER\App/Common/HAL/HAL_Def.h)(0x6157DFC9)
 I (..\ArduinoAPI\Arduino.h)(0x6157DFC9)
 I (E:\keil5\ARM\ARMCC\include\stdlib.h)(0x599ECD2C)
@@ -20525,7 +20525,7 @@ I (..\ArduinoAPI\Print.h)(0x6157DFC9)
 I (..\ArduinoAPI\libmaple_types.h)(0x6157DFC9)
 I (..\ArduinoAPI\Printable.h)(0x6157DFC9)
 I (..\ArduinoAPI\Stream.h)(0x6157DFC9)
-I (..\USER\HAL/HAL_Config.h)(0x61B1F1E8)
+I (..\USER\HAL/HAL_Config.h)(0x61B5BC06)
 I (..\USER\HAL/CommonMacro.h)(0x6157DFC9)
 F (..\Libraries\Adafruit_GFX_Library\Adafruit_GFX.cpp)(0x6157DFC9)(--cpp -c --cpu Cortex-M4.fp -g -O3 --apcs=interwork --split_sections -I ..\ArduinoAPI -I ..\Core -I ..\Libraries -I ..\USER -I ..\Libraries\SdFat\src -I ..\Simulator\LVGL.Simulator -I ..\USER\App -I ..\USER\HAL -I ..\ArduinoAPI --gnu-I.\RTE\_X-Track-IE:\keil5\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\Include-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\inc-IE:\keil5\Keil\AT32F4xx_DFP\1.3.7\Device\StdPeriph_Driver\templates-D__UVISION_VERSION="527" -D_RTE_ -DAT32F403ACGU7 -DLIBRARY_VERSION -DARDUINO="111"-o .\objects\adafruit_gfx.o --omf_browse .\objects\adafruit_gfx.crf --depend .\objects\adafruit_gfx.d)
 I (..\Libraries\Adafruit_GFX_Library\Adafruit_GFX.h)(0x6157DFC9)

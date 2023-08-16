@@ -15,6 +15,15 @@ static void HALL_SWITCH_InterrputUpdate()
 {
 	//时间秒数加一
 	Hall_second= Hall_second+1;
+	uint8_t temp=digitalRead(CONFIG_LED_PIN);
+	if(temp==1)
+	{
+		HAL::LED_Open();
+	}
+	else if(temp==0)
+	{
+		HAL::LED_Close();
+	}
 	
 	//清除LINE3上的中断标志位 
 	TMR_ClearFlag(CONFIG_HALL_SWITCH_TIM, TMR_FLAG_Update);
@@ -53,6 +62,11 @@ void HAL::HAL_Init()
     Clock_Init();
     Buzz_init();
     GPS_Init();
+		/*霍尔开关初始化*/
+		Hall_switch_Init();
+		/*LED0初始化*/
+		LED_Init();
+	
 #if CONFIG_SENSOR_ENABLE
     HAL_Sensor_Init();
 #endif
@@ -64,7 +78,7 @@ void HAL::HAL_Init()
     Timer_SetInterrupt(CONFIG_HAL_UPDATE_TIM, 10 * 1000, HAL_InterrputUpdate);
 		
     TIM_Cmd(CONFIG_HAL_UPDATE_TIM, ENABLE);
-		//霍尔开关配置
+		//霍尔开关定时器配置
 		Timer_SetInterrupt(CONFIG_HALL_SWITCH_TIM, 1000 * 1000, HALL_SWITCH_InterrputUpdate);
 		
 }
