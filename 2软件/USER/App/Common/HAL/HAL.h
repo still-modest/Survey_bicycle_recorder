@@ -125,6 +125,10 @@ void Memory_DumpInfo();
 /*Hall_swith*/
 void Hall_switch_Init();
 
+/*LED0  */
+void LED_Init();
+void LED_Open();
+void LED_Close();
 }
 
 #endif

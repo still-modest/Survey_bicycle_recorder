@@ -108,4 +108,8 @@
 #define CONFIG_HALL_SWITCH_PIN 			PB9
 #define CONFIG_HALL_SWITCH_TIM			TIM3
 #define PI													3.14
+
+/*LED0   */
+#define CONFIG_LED_PIN							PA15
+
 #endif

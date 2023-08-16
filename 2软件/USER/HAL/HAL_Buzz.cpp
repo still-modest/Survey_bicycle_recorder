@@ -33,3 +33,5 @@ void HAL::Buzz_Tone(uint32_t freq, int32_t duration)
         tone(CONFIG_BUZZ_PIN, freq);
     }
 }
+
+
