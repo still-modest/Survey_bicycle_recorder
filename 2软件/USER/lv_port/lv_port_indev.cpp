@@ -20,7 +20,8 @@
 /**********************
  *      TYPEDEFS
  **********************/
-
+bool Flag_In = true ;
+bool Flag_Out = false;
 /**********************
  *  STATIC PROTOTYPES
  **********************/
@@ -86,11 +87,21 @@ static void encoder_read(lv_indev_drv_t * indev_drv, lv_indev_data_t * data)
 {
     static bool lastState;
     data->enc_diff = HAL::Encoder_GetDiff();
-    
-    bool isPush = HAL::Encoder_GetIsPush();
-    
-    data->state = isPush ? LV_INDEV_STATE_PRESSED : LV_INDEV_STATE_RELEASED;
-    
+	
+		bool isPush = HAL::Encoder_GetIsPush();
+		
+		if(isPush)
+		{
+				data->state = LV_INDEV_STATE_PRESSED;
+		}
+	
+//		bool isBack = HAL::Encoder_GetIsBack();
+//	
+//		if(isBack)
+//		{
+//			data->state = LV_INDEV_STATE_PRESSED;
+//		}
+
     if(isPush != lastState)
     {
         HAL::Buzz_Tone(isPush ? 500 : 700, 20);
