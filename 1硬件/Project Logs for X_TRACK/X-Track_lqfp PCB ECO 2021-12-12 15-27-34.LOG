@@ -1,0 +1,36 @@
+Change component parameters: Designator = "3.3"; Footprint = "PAD1-SMD-C"; UniqueID = "\QZTBSXZW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GND"; Footprint = "PAD1-SMD-C"; UniqueID = "\YYKVQPKG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "SCL"; Footprint = "PAD1-SMD-C"; UniqueID = "\BDBHZRGH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "SDA"; Footprint = "PAD1-SMD-C"; UniqueID = "\NZNWKPCN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=D10(LED0603_R)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "联系卖家 免费查找封装"; Value = "封装库来自淘宝卖家ID：黄晶宝石"; VariantName = "[No Variations]"
+Added Component: Designator=R17(R0603_L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "BOM名称"; Value = "贴片电阻"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "联系卖家，免费查找封装"; Value = "唯一出售店铺网址https://shop463601444.taobao.com"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=3V3 Pin=R17-1
+Added Pin To Net: NetName=LED0 Pin=D10-2
+Added Pin To Net: NetName=LED0 Pin=U3-38
+Added Net: Name=LED0
+Added Pin To Net: NetName=NetD10_1 Pin=D10-1
+Added Pin To Net: NetName=NetD10_1 Pin=R17-2
+Added Net: Name=NetD10_1
+Added Member To Class: ClassName=X-Track_Sheet Member=Component D10 LED
+Added Member To Class: ClassName=X-Track_Sheet Member=Component R17 1K

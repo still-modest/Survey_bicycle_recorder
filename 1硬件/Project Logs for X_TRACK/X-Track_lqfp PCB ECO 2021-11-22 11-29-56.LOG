@@ -1,0 +1,62 @@
+Removed Pin From Net: NetName=EC_D Pin=C25-1
+Removed Pin From Net: NetName=GND Pin=C25-2
+Removed Pin From Net: NetName=NetD2_A Pin=Q1-1
+Removed Pin From Net: NetName=NetD2_A Pin=Q2-2
+Removed Pin From Net: NetName=EC_D Pin=R17-1
+Removed Pin From Net: NetName=3V3 Pin=R17-2
+Removed Pin From Net: NetName=EC_D Pin=S4-1
+Removed Member From Class: ClassName=X-Track_Sheet Member=C25
+Removed Member From Class: ClassName=X-Track_Sheet Member=R17
+Change component parameters: Designator = "3.3"; Footprint = "PAD1-SMD-C"; UniqueID = "\QZTBSXZW"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "GND"; Footprint = "PAD1-SMD-C"; UniqueID = "\YYKVQPKG"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "SCL"; Footprint = "PAD1-SMD-C"; UniqueID = "\BDBHZRGH"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Change component parameters: Designator = "SDA"; Footprint = "PAD1-SMD-C"; UniqueID = "\NZNWKPCN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "BOM名称"; Value = "引线焊盘"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "学习资源"; Value = "www.ooocke.com"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "版权归属"; Value = "源创客"; VariantName = "[No Variations]"
+Added Component: Designator=D11(SOD-323)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "_Comma"; Value = ","; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Footprint"; Value = "SOD-323"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Model"; Value = "1N4148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Name"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Specification"; Value = "Diode,1N4148,SOD-323,1A,40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Added Component: Designator=D12(SOD-323)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "_Comma"; Value = ","; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Current"; Value = "1A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Footprint"; Value = "SOD-323"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Model"; Value = "1N4148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Name"; Value = "Diode"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Specification"; Value = "Diode,1N4148,SOD-323,1A,40V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "_Voltage"; Value = "40V"; VariantName = "[No Variations]"
+Added Component: Designator=R18(R0603_L)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "P"; Value = "1/8W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "R"; Value = "20K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "参数"; Value = "Res,0805,0R,±1%,1/8W,100ppm,155C"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT_IN Pin=R18-1
+Added Pin To Net: NetName=EC_POW Pin=S4-1
+Added Net: Name=EC_POW
+Added Pin To Net: NetName=NetD11_A Pin=Q1-1
+Added Pin To Net: NetName=NetD11_A Pin=Q2-2
+Added Pin To Net: NetName=NetD11_A Pin=R18-2
+Added Net: Name=NetD11_A
+Added Member To Class: ClassName=X-Track_Power Member=Component D11 1N4148
+Added Member To Class: ClassName=X-Track_Power Member=Component D12 1N4148
+Added Member To Class: ClassName=X-Track_Power Member=Component R18 20K
