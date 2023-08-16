@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <LinkType>AT-Link</LinkType>
+  <Language>zh-CN</Language>
+  <Port>SWD</Port>
+  <Speed>4000</Speed>
+  <Address>08000000</Address>
+  <Size1>000475F4</Size1>
+  <Bank3En>false</Bank3En>
+  <Bank3Size>
+  </Bank3Size>
+  <Bank3TypeName>
+  </Bank3TypeName>
+  <Bank3TypeValue>1</Bank3TypeValue>
+  <Bank3FLASHDA>0</Bank3FLASHDA>
+  <Bank3Remap>0</Bank3Remap>
+  <ResetMode>0</ResetMode>
+  <BitMode>0</BitMode>
+  <DownloadEraseType>1</DownloadEraseType>
+  <DownloadBLEEraseType>1</DownloadBLEEraseType>
+  <DownloadBLEDisableFAP>0</DownloadBLEDisableFAP>
+  <DownloadBLEEnableFAP>0</DownloadBLEEnableFAP>
+  <DownloadVerifyFlag>1</DownloadVerifyFlag>
+  <DownloadSNFlag>0</DownloadSNFlag>
+  <DownloadSNAddr>08010000</DownloadSNAddr>
+  <DownloadSNStep>00000001</DownloadSNStep>
+  <DownloadSNLastNum>00000001</DownloadSNLastNum>
+  <DownloadResetRunFlag>0</DownloadResetRunFlag>
+  <DownloadDisableFAP>0</DownloadDisableFAP>
+  <DownloadEnableFAP>0</DownloadEnableFAP>
+  <DownloadEnableFAPLevel>0</DownloadEnableFAPLevel>
+  <DownloadButtomFree>0</DownloadButtomFree>
+  <ButtomFreeWaitTime>0</ButtomFreeWaitTime>
+  <i128KBEraseTime>
+    <i128KBEraseTime>2000</i128KBEraseTime>
+  </i128KBEraseTime>
+  <i256KBEraseTime>
+    <i256KBEraseTime>4000</i256KBEraseTime>
+  </i256KBEraseTime>
+  <i512KBEraseTime>
+    <i512KBEraseTime>8000</i512KBEraseTime>
+  </i512KBEraseTime>
+  <i1024KBEraseTime>
+    <i1024KBEraseTime>10000</i1024KBEraseTime>
+  </i1024KBEraseTime>
+  <DownloadUserSystemDataFlag>0</DownloadUserSystemDataFlag>
+  <DownloadUserSystemDataFilePath>
+  </DownloadUserSystemDataFilePath>
+  <DownloadDisableSlib>0</DownloadDisableSlib>
+  <DownloadEnableSlib>0</DownloadEnableSlib>
+  <MCUSerialSelectIndex>0</MCUSerialSelectIndex>
+  <FlashCRCPositionIndex>0</FlashCRCPositionIndex>
+  <FlashCRCStartSectorIndex>0</FlashCRCStartSectorIndex>
+  <FlashCRCEndSectorIndex>0</FlashCRCEndSectorIndex>
+  <ATLinkDebugReadAddress>08000000</ATLinkDebugReadAddress>
+  <ATLinkDebugReadLength>00000004</ATLinkDebugReadLength>
+  <ATLinkDebugReadBit>1</ATLinkDebugReadBit>
+  <ATLinkDebugWriteAddress>08000000</ATLinkDebugWriteAddress>
+  <ATLinkDebugWriteLength>00000004</ATLinkDebugWriteLength>
+  <ATLinkDebugWriteBit>1</ATLinkDebugWriteBit>
+  <Bank3TypeList>
+    <Member Name="GD25Q127C" Value="1" Size="16MB" />
+    <Member Name="GD25Q64C" Value="1" Size="8MB" />
+    <Member Name="GD25Q32C" Value="1" Size="4MB" />
+    <Member Name="GD25Q16C" Value="1" Size="2MB" />
+    <Member Name="GD25Q80C" Value="1" Size="1MB" />
+    <Member Name="W25Q128V" Value="1" Size="16MB" />
+    <Member Name="EN25QH128A" Value="2" Size="16MB" />
+    <Member Name="Common Type1" Value="1" Size="16MB" />
+    <Member Name="Common Type2" Value="2" Size="16MB" />
+  </Bank3TypeList>
+  <MultiFileList>
+    <Member Path="C:\Users\86155\Desktop\X-Track.hex" Address="08000000" />
+  </MultiFileList>
+</Configuration>
