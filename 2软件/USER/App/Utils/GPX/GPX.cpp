@@ -30,8 +30,9 @@
  */
 
 #include "GPX.h"
+#include "Config/Config.h"
 //
-#define _GPX_INFO_HEAD          "<info 姓名=\"张三\" 工号=\"123456789\" >\n"
+
 #define _GPX_INFO_TALL          "</info>\n"
 //
 //

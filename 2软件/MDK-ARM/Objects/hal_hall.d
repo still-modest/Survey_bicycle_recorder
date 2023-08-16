@@ -68,3 +68,4 @@
 .\objects\hal_hall.o: ..\ArduinoAPI\Stream.h
 .\objects\hal_hall.o: ..\USER\HAL\HAL_Config.h
 .\objects\hal_hall.o: ..\USER\HAL\CommonMacro.h
+.\objects\hal_hall.o: ..\USER\App\Config/Config.h

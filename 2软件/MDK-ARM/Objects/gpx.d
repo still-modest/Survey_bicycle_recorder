@@ -7,3 +7,4 @@
 .\objects\gpx.o: E:\keil5\ARM\ARMCC\Bin\..\include\string.h
 .\objects\gpx.o: E:\keil5\ARM\ARMCC\Bin\..\include\ctype.h
 .\objects\gpx.o: ..\ArduinoAPI\itoa.h
+.\objects\gpx.o: ..\USER\App\Config/Config.h

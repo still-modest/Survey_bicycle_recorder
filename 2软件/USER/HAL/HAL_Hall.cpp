@@ -2,11 +2,11 @@
 #include "exti.h"
 #include "timer.h"
 #include "Arduino.h"
+#include "Config/Config.h"
 
 double Hall_time=0;		//霍尔开关总时间		单位为s
 double Short_time=0;	//霍尔开关细微时间		单位为s
 extern uint32_t Hall_second;		//霍尔开关秒数		单位为s
-double Circle_radius=0.5;				//圆半径 单位为m
 double Circle_cfe=0;					//圆周长 单位为m
 double Circle_speed = 0;			//速度 单位为m/s
 //霍尔开关外部中断服务函数
